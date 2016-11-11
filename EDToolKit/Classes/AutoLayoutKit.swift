@@ -12,53 +12,58 @@ import UIKit
 public class AutoLayoutKit {
     
     static let instance = AutoLayoutKit()
-    class func sharedIntance() -> AutoLayoutKit {
+    public class func sharedIntance() -> AutoLayoutKit {
         return instance
     }
     
+    //MARK: init
+    init() {
+        
+    }
+    
     //MARK: AutoLayout Tool
-    func EqualWidth(TargetView : AnyObject, Width : CGFloat) {
+    public func EqualWidth(TargetView : AnyObject, Width : CGFloat) {
         TargetView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: Width))
     }
     
-    func EqualHeight(TargetView : AnyObject, Height : CGFloat) {
+    public func EqualHeight(TargetView : AnyObject, Height : CGFloat) {
         TargetView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: Height))
     }
     
-    func CenterX(TargetView : AnyObject, MainView : AnyObject) {
+    public func CenterX(TargetView : AnyObject, MainView : AnyObject) {
         MainView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: MainView, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0))
     }
     
-    func CenterY(TargetView : AnyObject, MainView : AnyObject) {
+    public func CenterY(TargetView : AnyObject, MainView : AnyObject) {
         MainView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: MainView, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0))
     }
     
-    func Leading(TargetView : AnyObject, MainView : AnyObject, LeadingSize : CGFloat) {
+    public func Leading(TargetView : AnyObject, MainView : AnyObject, LeadingSize : CGFloat) {
         MainView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: MainView, attribute: NSLayoutAttribute.Leading, multiplier: 1.0, constant: LeadingSize))
     }
     
-    func Trailing(TargetView : AnyObject, MainView : AnyObject, TrailingSize : CGFloat) {
+    public func Trailing(TargetView : AnyObject, MainView : AnyObject, TrailingSize : CGFloat) {
         MainView.addConstraint(NSLayoutConstraint(item: MainView, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: TargetView, attribute: NSLayoutAttribute.Trailing, multiplier: 1.0, constant: TrailingSize))
     }
     
-    func Top(TargetView : AnyObject, MainView :AnyObject, TopSize : CGFloat) {
+    public func Top(TargetView : AnyObject, MainView :AnyObject, TopSize : CGFloat) {
         MainView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: MainView, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: TopSize))
     }
     
-    func Bottom(TargetView : AnyObject, MainView : AnyObject, BottomSize : CGFloat) {
+    public func Bottom(TargetView : AnyObject, MainView : AnyObject, BottomSize : CGFloat) {
         MainView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: MainView, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: BottomSize))
     }
     
-    func setAspectRation(ratioWidth: CGFloat, ratioHeight: CGFloat, TargetView: AnyObject) {
+    public func setAspectRation(ratioWidth: CGFloat, ratioHeight: CGFloat, TargetView: AnyObject) {
         TargetView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: .Width, relatedBy: .Equal, toItem: TargetView, attribute: .Height, multiplier: ratioWidth/ratioHeight, constant: 0))
     }
     
-    func setViewTerm(term: CGFloat, topView: AnyObject, bottomView: AnyObject, mainView: AnyObject) {
+    public func setViewTerm(term: CGFloat, topView: AnyObject, bottomView: AnyObject, mainView: AnyObject) {
         mainView.addConstraint(NSLayoutConstraint(item: topView, attribute: .Bottom, relatedBy: .Equal, toItem: bottomView, attribute: .Top, multiplier: 1.0, constant: -term))
     }
     
     //MARK: set AutoLayout
-    func setAutoLayout(Leading: CGFloat?, Trailing: CGFloat?, Top: CGFloat?, Bottom: CGFloat?, Width: CGFloat?, Height: CGFloat?, TargetView: AnyObject, MainView: AnyObject){
+    public func setAutoLayout(Leading: CGFloat?, Trailing: CGFloat?, Top: CGFloat?, Bottom: CGFloat?, Width: CGFloat?, Height: CGFloat?, TargetView: AnyObject, MainView: AnyObject){
         // Leading
         if Leading != nil {
             self.Leading(TargetView, MainView: MainView, LeadingSize: Leading!)
@@ -90,7 +95,7 @@ public class AutoLayoutKit {
         }
     }
     
-    func setCenterLayout(X: Bool, Y: Bool, TargetView: AnyObject, MainView: AnyObject) {
+    public func setCenterLayout(X: Bool, Y: Bool, TargetView: AnyObject, MainView: AnyObject) {
         // X
         if X == true {
             self.CenterX(TargetView, MainView: MainView)
@@ -102,58 +107,58 @@ public class AutoLayoutKit {
         }
     }
     
-    func setEqualWidthAndHeight(width: CGFloat, height: CGFloat, targetView: AnyObject) {
+    public func setEqualWidthAndHeight(width: CGFloat, height: CGFloat, targetView: AnyObject) {
         self.EqualWidth(targetView, Width: width)
         self.EqualHeight(targetView, Height: height)
     }
     
     //MARK: return Constraint
-    func return_EqualWidth(TargetView : AnyObject, Width : CGFloat) -> NSLayoutConstraint {
+    public func return_EqualWidth(TargetView : AnyObject, Width : CGFloat) -> NSLayoutConstraint {
         let EqualWidth : NSLayoutConstraint = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: Width)
         return EqualWidth
     }
     
-    func return_EqualHeight(TargetView : AnyObject, Height : CGFloat) -> NSLayoutConstraint {
+    public func return_EqualHeight(TargetView : AnyObject, Height : CGFloat) -> NSLayoutConstraint {
         let EqualHeight                     = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: Height)
         return EqualHeight
     }
     
-    func return_CenterX(TargetView : AnyObject, MainView : AnyObject) -> NSLayoutConstraint {
+    public func return_CenterX(TargetView : AnyObject, MainView : AnyObject) -> NSLayoutConstraint {
         let centerX                         = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: MainView, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0)
         return centerX
     }
     
-    func return_CenterY(TargetView : AnyObject, MainView : AnyObject) -> NSLayoutConstraint {
+    public func return_CenterY(TargetView : AnyObject, MainView : AnyObject) -> NSLayoutConstraint {
         let centerY                         = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: MainView, attribute: NSLayoutAttribute.CenterY, multiplier: 1.0, constant: 0)
         return centerY
     }
     
-    func return_Leading(TargetView : AnyObject, MainView : AnyObject, LeadingSize : CGFloat) -> NSLayoutConstraint {
+    public func return_Leading(TargetView : AnyObject, MainView : AnyObject, LeadingSize : CGFloat) -> NSLayoutConstraint {
         let Leading                         = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: MainView, attribute: NSLayoutAttribute.Leading, multiplier: 1.0, constant: LeadingSize)
         return Leading
     }
     
-    func return_Trailing(TargetView : AnyObject, MainView : AnyObject, TrailingSize : CGFloat) -> NSLayoutConstraint {
+    public func return_Trailing(TargetView : AnyObject, MainView : AnyObject, TrailingSize : CGFloat) -> NSLayoutConstraint {
         let Trailing                        = NSLayoutConstraint(item: MainView, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: TargetView, attribute: NSLayoutAttribute.Trailing, multiplier: 1.0, constant: TrailingSize)
         return Trailing
     }
     
-    func return_Top(TargetView : AnyObject, MainView :AnyObject, TopSize : CGFloat) -> NSLayoutConstraint {
+    public func return_Top(TargetView : AnyObject, MainView :AnyObject, TopSize : CGFloat) -> NSLayoutConstraint {
         let top                             = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: MainView, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: TopSize)
         return top
     }
     
-    func return_Bottom(TargetView : AnyObject, MainView : AnyObject, BottomSize : CGFloat) -> NSLayoutConstraint {
+    public func return_Bottom(TargetView : AnyObject, MainView : AnyObject, BottomSize : CGFloat) -> NSLayoutConstraint {
         let bottom                          = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: MainView, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: BottomSize)
         return bottom
     }
     
     // TODO: Ratio 추가.
-    func setRatio(TargetView: AnyObject, ratioWidth: CGFloat, ratioHeigth: CGFloat) {
+    public func setRatio(TargetView: AnyObject, ratioWidth: CGFloat, ratioHeigth: CGFloat) {
         TargetView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: .Width, relatedBy: .Equal, toItem: TargetView, attribute: .Height, multiplier: ratioWidth / ratioHeigth, constant: 1.0))
     }
     
-    func return_Ratio(TargetView: AnyObject, ratioWidth: CGFloat, ratioHeight: CGFloat) -> NSLayoutConstraint {
+    public func return_Ratio(TargetView: AnyObject, ratioWidth: CGFloat, ratioHeight: CGFloat) -> NSLayoutConstraint {
         let ratio = NSLayoutConstraint(item: TargetView, attribute: .Width, relatedBy: .Equal, toItem: TargetView, attribute: .Height, multiplier: ratioWidth / ratioHeight, constant: 1.0)
         return ratio
     }
