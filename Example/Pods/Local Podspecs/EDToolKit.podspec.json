@@ -1,0 +1,22 @@
+{
+  "name": "EDToolKit",
+  "version": "0.1.0",
+  "summary": "A short description of EDToolKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/EDToolKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "은아월": "instru93@naver.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/EDToolKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "EDToolKit/Classes/**/*"
+}

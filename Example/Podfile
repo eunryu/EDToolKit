@@ -1,0 +1,6 @@
+use_frameworks!
+target 'EDToolKit_Tests' do
+  pod 'EDToolKit', :path => '../'
+  
+  
+end
