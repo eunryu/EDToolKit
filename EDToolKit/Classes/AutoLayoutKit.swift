@@ -10,6 +10,12 @@ import Foundation
 import UIKit
 
 public class AutoLayoutKit {
+    
+    static let instance = AutoLayoutKit()
+    class func sharedIntance() -> AutoLayoutKit {
+        return instance
+    }
+    
     //MARK: AutoLayout Tool
     func EqualWidth(TargetView : AnyObject, Width : CGFloat) {
         TargetView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: Width))
