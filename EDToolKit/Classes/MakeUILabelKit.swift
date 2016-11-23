@@ -10,8 +10,14 @@ import Foundation
 import UIKit
 
 public class MakeUILabelKit {
-    
+
+    public typealias CompletionHandler = () -> Void
     public static let COLOR_BASIC = UIColor.blackColor()
+    private var isAction: Void = Void()
+    
+//    let handler: han
+    
+    private var isActionTest: CompletionHandler!
     
     public init() {
     
@@ -28,25 +34,6 @@ public class MakeUILabelKit {
         
         addView.addSubview(mainLabel)
         return mainLabel
-    }
-    
-    public func makeLabel(text: String, size: CGRect, textColor: UIColor, textSize: CGFloat, addView: AnyObject) -> UILabel {
-        let mainlabel = UILabel(frame: size)
-        
-        labelBasicWork(mainlabel)
-        mainlabel.text = text
-        mainlabel.textColor = textColor
-        mainlabel.font = UIFont(name: "Helvetica", size: textSize)
-        
-        addView.addSubview(mainlabel)
-        return mainlabel
-    }
-    
-    // MARK: Make tool
-    func labelBasicWork(label: UILabel) {
-        label.numberOfLines = 0
-        label.textAlignment = .Left
-        label.translatesAutoresizingMaskIntoConstraints = false
     }
     
     public func textDecoration(label: UILabel, size: CGFloat?, fontName: String?, color: UIColor?, alignment: NSTextAlignment?) {
@@ -67,6 +54,35 @@ public class MakeUILabelKit {
         if alignment != nil {
             label.textAlignment = alignment!
         }
+    }
+    
+    public func addTouchAction(label: UILabel, isVoid: CompletionHandler, isAction: Selector) {
+        self.isActionTest = isVoid
+        let isGesture = UITapGestureRecognizer(target: label, action: isAction)
+        label.addGestureRecognizer(isGesture)
+    }
+    
+    public func returnSelector() -> Selector{
+        return #selector(isActionTest(_:))
+    }
+    
+    @objc public func isActionTest(sender: UITapGestureRecognizer) {
+        print("ISAction")
+    }
+    
+    public func isFunction() {
+//        self.isActionTest
+        
+    }
+    
+    public func isATest(isNeedVoid: CompletionHandler) {
+    
+    }
+    // MARK: Make tool
+    func labelBasicWork(label: UILabel) {
+        label.numberOfLines = 0
+        label.textAlignment = .Left
+        label.translatesAutoresizingMaskIntoConstraints = false
     }
 
 }
