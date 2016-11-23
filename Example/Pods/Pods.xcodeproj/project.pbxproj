@@ -12,6 +12,7 @@
 		79D1C77097BBF8AAEE965B312590C646 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		93003F706C574E2E3F5DB5D453C9134B /* Pods-EDToolKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E265958D2BC6AA429C89079AC078CB /* Pods-EDToolKit_Tests-dummy.m */; };
 		C6C2BF6F3388499EED10C75D9326A314 /* EDToolKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E59C8B18147CB4EC18BF05F9D086F0 /* EDToolKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DECA7EF61DE5592D00D80470 /* MakeUILabelKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA7EF51DE5592D00D80470 /* MakeUILabelKit.swift */; };
 		DEFC05241DD5A1180085B173 /* AutoLayoutKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC05231DD5A1180085B173 /* AutoLayoutKit.swift */; };
 		DEFC05281DD5AEAB0085B173 /* ExtensionKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC05271DD5AEAB0085B173 /* ExtensionKit.swift */; };
 		EF29BDC5DD62698C16708772EF928E92 /* EDToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 114C585398331B8DBD870D045939D10C /* EDToolKit-dummy.m */; };
@@ -48,6 +49,7 @@
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D2E265958D2BC6AA429C89079AC078CB /* Pods-EDToolKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EDToolKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		DD306E6C682D23847EC8A66D178C2A47 /* Pods-EDToolKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EDToolKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DECA7EF51DE5592D00D80470 /* MakeUILabelKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeUILabelKit.swift; sourceTree = "<group>"; };
 		DEFC05231DD5A1180085B173 /* AutoLayoutKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutKit.swift; sourceTree = "<group>"; };
 		DEFC05271DD5AEAB0085B173 /* ExtensionKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionKit.swift; sourceTree = "<group>"; };
 		E0E59C8B18147CB4EC18BF05F9D086F0 /* EDToolKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EDToolKit-umbrella.h"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		01FCD6606885BE3ECA60683FEDEACAE4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DECA7EF71DE55A6900D80470 /* UIKit */,
 				4DD3DAD8BC870A63CE531C206573E0EE /* ReplaceMe.swift */,
 				DEFC05231DD5A1180085B173 /* AutoLayoutKit.swift */,
 				DEFC05271DD5AEAB0085B173 /* ExtensionKit.swift */,
@@ -184,6 +187,14 @@
 			);
 			name = "Pods-EDToolKit_Tests";
 			path = "Target Support Files/Pods-EDToolKit_Tests";
+			sourceTree = "<group>";
+		};
+		DECA7EF71DE55A6900D80470 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DECA7EF51DE5592D00D80470 /* MakeUILabelKit.swift */,
+			);
+			name = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DECA7EF61DE5592D00D80470 /* MakeUILabelKit.swift in Sources */,
 				EF29BDC5DD62698C16708772EF928E92 /* EDToolKit-dummy.m in Sources */,
 				4F7477BC1F0E1622D653F7ECD4597956 /* ReplaceMe.swift in Sources */,
 				DEFC05281DD5AEAB0085B173 /* ExtensionKit.swift in Sources */,

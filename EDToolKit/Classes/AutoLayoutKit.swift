@@ -17,7 +17,7 @@ public class AutoLayoutKit {
     }
     
     //MARK: init
-    init() {
+    public init() {
         
     }
     
