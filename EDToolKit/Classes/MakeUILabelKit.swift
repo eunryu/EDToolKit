@@ -9,34 +9,34 @@
 import Foundation
 import UIKit
 
-public class MakeUILabelKit {
+open class MakeUILabelKit {
 
     public typealias CompletionHandler = () -> Void
-    public static let COLOR_BASIC = UIColor.blackColor()
-    private var isAction: Void = Void()
+    open static let COLOR_BASIC = UIColor.black
+    fileprivate var isAction: Void = Void()
     
 //    let handler: han
     
-    private var isActionTest: CompletionHandler!
+    fileprivate var isActionTest: CompletionHandler!
     
     public init() {
     
     }
     
     // MARK: make UILabel
-    public func makeLabel(text: String, size: CGRect, addView: AnyObject) -> UILabel {
+    open func makeLabel(_ text: String, size: CGRect, addView: AnyObject) -> UILabel {
         let mainLabel = UILabel(frame: size)
         
         labelBasicWork(mainLabel)
         mainLabel.text = text
-        mainLabel.textColor = UIColor.blackColor()
+        mainLabel.textColor = UIColor.black
         mainLabel.font = UIFont(name: "Helvetica", size: 14.0)
         
         addView.addSubview(mainLabel)
         return mainLabel
     }
     
-    public func textDecoration(label: UILabel, size: CGFloat?, fontName: String?, color: UIColor?, alignment: NSTextAlignment?) {
+    open func textDecoration(_ label: UILabel, size: CGFloat?, fontName: String?, color: UIColor?, alignment: NSTextAlignment?) {
         if size != nil && fontName != nil {
             label.font = UIFont(name: fontName!, size: size!)
         } else {
@@ -56,32 +56,32 @@ public class MakeUILabelKit {
         }
     }
     
-    public func addTouchAction(label: UILabel, isVoid: CompletionHandler, isAction: Selector) {
+    open func addTouchAction(_ label: UILabel, isVoid: @escaping CompletionHandler, isAction: Selector) {
         self.isActionTest = isVoid
         let isGesture = UITapGestureRecognizer(target: label, action: isAction)
         label.addGestureRecognizer(isGesture)
     }
     
-    public func returnSelector() -> Selector{
+    open func returnSelector() -> Selector{
         return #selector(isActionTest(_:))
     }
     
-    @objc public func isActionTest(sender: UITapGestureRecognizer) {
+    @objc open func isActionTest(_ sender: UITapGestureRecognizer) {
         print("ISAction")
     }
     
-    public func isFunction() {
+    open func isFunction() {
 //        self.isActionTest
         
     }
     
-    public func isATest(isNeedVoid: CompletionHandler) {
+    open func isATest(_ isNeedVoid: CompletionHandler) {
     
     }
     // MARK: Make tool
-    func labelBasicWork(label: UILabel) {
+    func labelBasicWork(_ label: UILabel) {
         label.numberOfLines = 0
-        label.textAlignment = .Left
+        label.textAlignment = .left
         label.translatesAutoresizingMaskIntoConstraints = false
     }
 
