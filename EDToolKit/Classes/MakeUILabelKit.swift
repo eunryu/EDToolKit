@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-open class MakeUILabelKit {
+public class MakeUILabelKit {
 
     public typealias CompletionHandler = () -> Void
     open static let COLOR_BASIC = UIColor.black
@@ -17,14 +17,14 @@ open class MakeUILabelKit {
     
 //    let handler: han
     
-    fileprivate var isActionTest: CompletionHandler!
+    private var isActionTest: CompletionHandler!
     
     public init() {
     
     }
     
     // MARK: make UILabel
-    open func makeLabel(_ text: String, size: CGRect, addView: AnyObject) -> UILabel {
+    public func makeLabel(_ text: String, size: CGRect, addView: AnyObject) -> UILabel {
         let mainLabel = UILabel(frame: size)
         
         labelBasicWork(mainLabel)
@@ -36,7 +36,7 @@ open class MakeUILabelKit {
         return mainLabel
     }
     
-    open func textDecoration(_ label: UILabel, size: CGFloat?, fontName: String?, color: UIColor?, alignment: NSTextAlignment?) {
+    public func textDecoration(_ label: UILabel, size: CGFloat?, fontName: String?, color: UIColor?, alignment: NSTextAlignment?) {
         if size != nil && fontName != nil {
             label.font = UIFont(name: fontName!, size: size!)
         } else {
@@ -56,26 +56,26 @@ open class MakeUILabelKit {
         }
     }
     
-    open func addTouchAction(_ label: UILabel, isVoid: @escaping CompletionHandler, isAction: Selector) {
+    public func addTouchAction(_ label: UILabel, isVoid: @escaping CompletionHandler, isAction: Selector) {
         self.isActionTest = isVoid
         let isGesture = UITapGestureRecognizer(target: label, action: isAction)
         label.addGestureRecognizer(isGesture)
     }
     
-    open func returnSelector() -> Selector{
+    public func returnSelector() -> Selector{
         return #selector(isActionTest(_:))
     }
     
-    @objc open func isActionTest(_ sender: UITapGestureRecognizer) {
+    @objc public func isActionTest(_ sender: UITapGestureRecognizer) {
         print("ISAction")
     }
     
-    open func isFunction() {
+    public func isFunction() {
 //        self.isActionTest
         
     }
     
-    open func isATest(_ isNeedVoid: CompletionHandler) {
+    public func isATest(_ isNeedVoid: CompletionHandler) {
     
     }
     // MARK: Make tool
