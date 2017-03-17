@@ -62,6 +62,10 @@ open class AutoLayoutKit {
         mainView.addConstraint(NSLayoutConstraint(item: topView, attribute: .bottom, relatedBy: .equal, toItem: bottomView, attribute: .top, multiplier: 1.0, constant: -term))
     }
     
+    open func setViewTerm(_ term: CGFloat, leftView: AnyObject, rightView: AnyObject, mainView: AnyObject) {
+        mainView.addConstraint(NSLayoutConstraint(item: leftView, attribute: .right, relatedBy: .equal, toItem: rightView, attribute: .left, multiplier: 1.0, constant: -term))
+    }
+    
     //MARK: set AutoLayout
     open func setAutoLayout(_ Leading: CGFloat?, Trailing: CGFloat?, Top: CGFloat?, Bottom: CGFloat?, Width: CGFloat?, Height: CGFloat?, TargetView: AnyObject, MainView: AnyObject){
         // Leading
