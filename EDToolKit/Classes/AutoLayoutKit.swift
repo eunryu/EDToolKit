@@ -11,10 +11,7 @@ import UIKit
 
 open class AutoLayoutKit {
     
-    static let instance = AutoLayoutKit()
-    open class func sharedIntance() -> AutoLayoutKit {
-        return instance
-    }
+    open static let shared = AutoLayoutKit()
     
     //MARK: init
     public init() {
