@@ -34,12 +34,12 @@ public class MakeUILabelKit {
         return mainLabel
     }
     
-    public func textDecoration(_ label: UILabel, size: CGFloat?, fontName: String?, color: UIColor?, alignment: NSTextAlignment?) {
-        if size != nil && fontName != nil {
-            label.font = UIFont(name: fontName!, size: size!)
+    public func textDecoration(_ label: UILabel, fontSize: CGFloat?, fontName: String?, color: UIColor?, alignment: NSTextAlignment?) {
+        if fontSize != nil && fontName != nil {
+            label.font = UIFont(name: fontName!, size: fontSize!)
         } else {
-            if size != nil {
-                label.font = UIFont(name: "Helvetica", size: size!)
+            if fontSize != nil {
+                label.font = UIFont(name: "Helvetica", size: fontSize!)
             } else if fontName != nil {
                 label.font = UIFont(name: fontName!, size: 14.0)
             }
@@ -54,8 +54,28 @@ public class MakeUILabelKit {
         }
     }
     
+    public func contentDecoration(label: UILabel, layerColor: UIColor?, bgColor: UIColor?, layerWidth: CGFloat?, corner: CGFloat?) {
+        if layerColor != nil && layerWidth != nil {
+            label.layer.borderColor = layerColor!.cgColor
+            label.layer.borderWidth = layerWidth!
+        } else {
+            if layerColor != nil {
+                label.layer.borderColor = layerColor!.cgColor
+            } else if layerWidth != nil {
+                label.layer.borderWidth = layerWidth!
+            }
+        }
+        
+        if bgColor != nil {
+            label.backgroundColor = bgColor!
+        }
+        
+        if corner != nil {
+            label.layer.cornerRadius = corner!
+        }
+    }
+    
     public func addTouchAction(_ label: UILabel, isVoid: @escaping CompletionHandler, isAction: Selector) {
-        self.isActionTest = isVoid
         let isGesture = UITapGestureRecognizer(target: label, action: isAction)
         label.addGestureRecognizer(isGesture)
     }

@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class FadeInOutEffectSegue: UIStoryboardSegue {
+    
     override func perform() {
         let transition = CATransition()
         transition.duration = 0.3
