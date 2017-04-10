@@ -15,8 +15,6 @@ public class MakeUILabelKit {
     open static let COLOR_BASIC = UIColor.black
     fileprivate var isAction: Void = Void()
     
-//    let handler: han
-    
     private var isActionTest: CompletionHandler!
     
     public init() {
@@ -62,22 +60,6 @@ public class MakeUILabelKit {
         label.addGestureRecognizer(isGesture)
     }
     
-    public func returnSelector() -> Selector{
-        return #selector(isActionTest(_:))
-    }
-    
-    @objc public func isActionTest(_ sender: UITapGestureRecognizer) {
-        print("ISAction")
-    }
-    
-    public func isFunction() {
-//        self.isActionTest
-        
-    }
-    
-    public func isATest(_ isNeedVoid: CompletionHandler) {
-    
-    }
     // MARK: Make tool
     func labelBasicWork(_ label: UILabel) {
         label.numberOfLines = 0
