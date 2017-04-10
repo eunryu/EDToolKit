@@ -14,6 +14,7 @@
 		93FAEB911E9B13C600CDDC5E /* CustomUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAEB901E9B13C600CDDC5E /* CustomUIKit.swift */; };
 		93FAEB931E9B179F00CDDC5E /* CommonModuleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAEB921E9B179F00CDDC5E /* CommonModuleKit.swift */; };
 		93FAEB951E9B1A0000CDDC5E /* SharedManagerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAEB941E9B1A0000CDDC5E /* SharedManagerKit.swift */; };
+		93FAEB991E9B1B6400CDDC5E /* FadeInOutEffectSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAEB981E9B1B6400CDDC5E /* FadeInOutEffectSegue.swift */; };
 		C6C2BF6F3388499EED10C75D9326A314 /* EDToolKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E59C8B18147CB4EC18BF05F9D086F0 /* EDToolKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DECA7EF61DE5592D00D80470 /* MakeUILabelKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA7EF51DE5592D00D80470 /* MakeUILabelKit.swift */; };
 		DEFC05241DD5A1180085B173 /* AutoLayoutKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC05231DD5A1180085B173 /* AutoLayoutKit.swift */; };
@@ -49,6 +50,7 @@
 		93FAEB901E9B13C600CDDC5E /* CustomUIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIKit.swift; sourceTree = "<group>"; };
 		93FAEB921E9B179F00CDDC5E /* CommonModuleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonModuleKit.swift; sourceTree = "<group>"; };
 		93FAEB941E9B1A0000CDDC5E /* SharedManagerKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedManagerKit.swift; sourceTree = "<group>"; };
+		93FAEB981E9B1B6400CDDC5E /* FadeInOutEffectSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeInOutEffectSegue.swift; sourceTree = "<group>"; };
 		9CCDC131540014F745AC2AD22A909B98 /* EDToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EDToolKit-prefix.pch"; sourceTree = "<group>"; };
 		A6E59C013D9B6C4636F1E8CD044A106F /* EDToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31E3CCF9BE006C2890F44D2DF3092C3 /* Pods-EDToolKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EDToolKit_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -93,12 +95,12 @@
 		01FCD6606885BE3ECA60683FEDEACAE4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				93FAEB971E9B1B4800CDDC5E /* CustomSegue */,
+				93FAEB961E9B1AF100CDDC5E /* Tool */,
 				DECA7EF71DE55A6900D80470 /* UIKit */,
 				4DD3DAD8BC870A63CE531C206573E0EE /* ReplaceMe.swift */,
 				DEFC05231DD5A1180085B173 /* AutoLayoutKit.swift */,
 				DEFC05271DD5AEAB0085B173 /* ExtensionKit.swift */,
-				93FAEB921E9B179F00CDDC5E /* CommonModuleKit.swift */,
-				93FAEB941E9B1A0000CDDC5E /* SharedManagerKit.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -155,6 +157,23 @@
 				51317AF60B153A0F8AF5FBB41CE02294 /* EDToolKit */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		93FAEB961E9B1AF100CDDC5E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				93FAEB941E9B1A0000CDDC5E /* SharedManagerKit.swift */,
+				93FAEB921E9B179F00CDDC5E /* CommonModuleKit.swift */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		93FAEB971E9B1B4800CDDC5E /* CustomSegue */ = {
+			isa = PBXGroup;
+			children = (
+				93FAEB981E9B1B6400CDDC5E /* FadeInOutEffectSegue.swift */,
+			);
+			name = CustomSegue;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -317,6 +336,7 @@
 				93FAEB951E9B1A0000CDDC5E /* SharedManagerKit.swift in Sources */,
 				EF29BDC5DD62698C16708772EF928E92 /* EDToolKit-dummy.m in Sources */,
 				4F7477BC1F0E1622D653F7ECD4597956 /* ReplaceMe.swift in Sources */,
+				93FAEB991E9B1B6400CDDC5E /* FadeInOutEffectSegue.swift in Sources */,
 				DEFC05281DD5AEAB0085B173 /* ExtensionKit.swift in Sources */,
 				DEFC05241DD5A1180085B173 /* AutoLayoutKit.swift in Sources */,
 			);
