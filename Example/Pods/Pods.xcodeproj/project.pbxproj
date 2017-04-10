@@ -12,6 +12,7 @@
 		79D1C77097BBF8AAEE965B312590C646 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		93003F706C574E2E3F5DB5D453C9134B /* Pods-EDToolKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E265958D2BC6AA429C89079AC078CB /* Pods-EDToolKit_Tests-dummy.m */; };
 		93FAEB911E9B13C600CDDC5E /* CustomUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAEB901E9B13C600CDDC5E /* CustomUIKit.swift */; };
+		93FAEB931E9B179F00CDDC5E /* CommonModuleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAEB921E9B179F00CDDC5E /* CommonModuleKit.swift */; };
 		C6C2BF6F3388499EED10C75D9326A314 /* EDToolKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E59C8B18147CB4EC18BF05F9D086F0 /* EDToolKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DECA7EF61DE5592D00D80470 /* MakeUILabelKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECA7EF51DE5592D00D80470 /* MakeUILabelKit.swift */; };
 		DEFC05241DD5A1180085B173 /* AutoLayoutKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC05231DD5A1180085B173 /* AutoLayoutKit.swift */; };
@@ -45,6 +46,7 @@
 		860768C1C4833F75F9C88F1CBD2DF8B6 /* Pods_EDToolKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EDToolKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93FAEB901E9B13C600CDDC5E /* CustomUIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIKit.swift; sourceTree = "<group>"; };
+		93FAEB921E9B179F00CDDC5E /* CommonModuleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonModuleKit.swift; sourceTree = "<group>"; };
 		9CCDC131540014F745AC2AD22A909B98 /* EDToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EDToolKit-prefix.pch"; sourceTree = "<group>"; };
 		A6E59C013D9B6C4636F1E8CD044A106F /* EDToolKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EDToolKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31E3CCF9BE006C2890F44D2DF3092C3 /* Pods-EDToolKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EDToolKit_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				4DD3DAD8BC870A63CE531C206573E0EE /* ReplaceMe.swift */,
 				DEFC05231DD5A1180085B173 /* AutoLayoutKit.swift */,
 				DEFC05271DD5AEAB0085B173 /* ExtensionKit.swift */,
+				93FAEB921E9B179F00CDDC5E /* CommonModuleKit.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FAEB931E9B179F00CDDC5E /* CommonModuleKit.swift in Sources */,
 				DECA7EF61DE5592D00D80470 /* MakeUILabelKit.swift in Sources */,
 				93FAEB911E9B13C600CDDC5E /* CustomUIKit.swift in Sources */,
 				EF29BDC5DD62698C16708772EF928E92 /* EDToolKit-dummy.m in Sources */,
