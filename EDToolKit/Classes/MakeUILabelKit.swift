@@ -35,6 +35,22 @@ public class MakeUILabelKit {
         return mainLabel
     }
     
+    open func makeLabel(_ spacingText: String, spacingSize: CGFloat, size: CGRect, addView: AnyObject) -> UILabel {
+        let mainLabel = UILabel(frame: size)
+        
+        labelBasicWork(mainLabel)
+        
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = spacingSize
+        mainLabel.attributedText = NSAttributedString(string: spacingText, attributes: [NSParagraphStyleAttributeName:style])
+        
+        mainLabel.textColor = UIColor.black
+        mainLabel.font = UIFont(name: "Helvetica", size: 14.0)
+        
+        addView.addSubview(mainLabel)
+        return mainLabel
+    }
+    
     open func textDecoration(_ label: UILabel, fontSize: CGFloat?, fontName: String?, color: UIColor?, alignment: NSTextAlignment?) {
         if fontSize != nil && fontName != nil {
             label.font = UIFont(name: fontName!, size: fontSize!)
