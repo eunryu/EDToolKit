@@ -34,7 +34,7 @@ open class AutoLayoutKit {
     open func CenterY(_ TargetView : AnyObject, MainView : AnyObject) {
         MainView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.centerY, multiplier: 1.0, constant: 0))
     }
-    
+
     open func Leading(_ TargetView : AnyObject, MainView : AnyObject, LeadingSize : CGFloat) {
         MainView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.leading, multiplier: 1.0, constant: LeadingSize))
     }
