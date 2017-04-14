@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MakeUIViewKit {
+public class MakeUIViewKit {
     
     static let shared = MakeUIViewKit()
     public init() {

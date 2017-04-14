@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MakeUIButtonKit {
+public class MakeUIButtonKit {
     
     open static let shared = MakeUIButtonKit()
     public init() {

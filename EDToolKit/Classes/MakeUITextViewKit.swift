@@ -8,7 +8,7 @@
 
 import Foundation
 
-class MakeUITextViewKit {
+public class MakeUITextViewKit {
     
     static let shared = MakeUITextViewKit()
     public init() {

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MakeUITextFieldKit {
+public class MakeUITextFieldKit {
     
     static let shard = MakeUITextFieldKit()
     public init() {
