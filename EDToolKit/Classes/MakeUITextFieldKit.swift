@@ -11,7 +11,7 @@ import UIKit
 
 public class MakeUITextFieldKit {
     
-    static let shard = MakeUITextFieldKit()
+    open static let shard = MakeUITextFieldKit()
     public init() {
         
     }

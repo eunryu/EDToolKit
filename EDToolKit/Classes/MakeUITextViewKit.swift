@@ -10,7 +10,7 @@ import Foundation
 
 public class MakeUITextViewKit {
     
-    static let shared = MakeUITextViewKit()
+    open static let shared = MakeUITextViewKit()
     public init() {
         
     }

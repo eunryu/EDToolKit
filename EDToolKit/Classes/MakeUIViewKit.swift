@@ -11,7 +11,7 @@ import UIKit
 
 public class MakeUIViewKit {
     
-    static let shared = MakeUIViewKit()
+    open static let shared = MakeUIViewKit()
     public init() {
         
     }
