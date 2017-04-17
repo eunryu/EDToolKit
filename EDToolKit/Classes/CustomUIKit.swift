@@ -10,15 +10,15 @@ import Foundation
 import UIKit
 
 open class ClickBgEffectButton: UIButton {
-    @IBInspectable var mainColor: UIColor = UIColor.white {
+    @IBInspectable open var mainColor: UIColor = UIColor.white {
         didSet {
             self.backgroundColor = mainColor
         }
     }
     
-    @IBInspectable var pressColor: UIColor!
+    @IBInspectable open var pressColor: UIColor!
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
@@ -43,16 +43,16 @@ open class ClickBgEffectButton: UIButton {
 }
 
 open class ClickLayerEffectButton: UIButton {
-    @IBInspectable var mainBorderLayer: UIColor = UIColor.white {
+    @IBInspectable open var mainBorderLayer: UIColor = UIColor.white {
         didSet {
             self.layer.borderColor = mainBorderLayer.cgColor
             self.layer.borderWidth = 1
         }
     }
     
-    @IBInspectable var pressBorderLayer: UIColor!
+    @IBInspectable open var pressBorderLayer: UIColor!
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
@@ -77,25 +77,25 @@ open class ClickLayerEffectButton: UIButton {
 }
 
 open class ClickBgAndTextEffectButton: UIButton {
-    @IBInspectable var mainBgColor: UIColor = UIColor.white {
+    @IBInspectable open var mainBgColor: UIColor = UIColor.white {
         didSet {
             self.backgroundColor = mainBgColor
         }
     }
-    @IBInspectable var mainTextColor: UIColor = UIColor.white {
+    @IBInspectable open var mainTextColor: UIColor = UIColor.white {
         didSet {
             self.setTitleColor(mainTextColor, for: .normal)
         }
     }
     
-    @IBInspectable var pressBgColor: UIColor!
-    @IBInspectable var pressTextColor: UIColor = UIColor.white {
+    @IBInspectable open var pressBgColor: UIColor!
+    @IBInspectable open var pressTextColor: UIColor = UIColor.white {
         didSet {
             self.setTitleColor(pressTextColor, for: .highlighted)
         }
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
@@ -120,25 +120,25 @@ open class ClickBgAndTextEffectButton: UIButton {
 }
 
 open class ClickLayerAndTextEffectButton: UIButton {
-    @IBInspectable var mainLayerColor: UIColor = UIColor.white {
+    @IBInspectable open var mainLayerColor: UIColor = UIColor.white {
         didSet {
             self.layer.borderColor = mainLayerColor.cgColor
             self.layer.borderWidth = 1
         }
     }
-    @IBInspectable var mainTextColor: UIColor = UIColor.white {
+    @IBInspectable open var mainTextColor: UIColor = UIColor.white {
         didSet {
             self.setTitleColor(mainTextColor, for: .normal)
         }
     }
-    @IBInspectable var pressLayerColor: UIColor!
-    @IBInspectable var pressTextColor: UIColor = UIColor.white {
+    @IBInspectable open var pressLayerColor: UIColor!
+    @IBInspectable open var pressTextColor: UIColor = UIColor.white {
         didSet {
             self.setTitleColor(pressTextColor, for: .highlighted)
         }
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
@@ -163,31 +163,31 @@ open class ClickLayerAndTextEffectButton: UIButton {
 }
 
 open class ClickMultiEffectButton: UIButton {
-    @IBInspectable var mainLayerColor: UIColor = UIColor.white {
+    @IBInspectable open var mainLayerColor: UIColor = UIColor.white {
         didSet {
             self.layer.borderWidth = 1
             self.layer.borderColor = mainLayerColor.cgColor
         }
     }
-    @IBInspectable var mainTextColor: UIColor = UIColor.white {
+    @IBInspectable open var mainTextColor: UIColor = UIColor.white {
         didSet {
             self.setTitleColor(mainTextColor, for: .normal)
         }
     }
-    @IBInspectable var mainBgColor: UIColor = UIColor.white {
+    @IBInspectable open var mainBgColor: UIColor = UIColor.white {
         didSet {
             self.backgroundColor = mainBgColor
         }
     }
-    @IBInspectable var pressLayerColor: UIColor!
-    @IBInspectable var pressTextColor: UIColor = UIColor.white {
+    @IBInspectable open var pressLayerColor: UIColor!
+    @IBInspectable open var pressTextColor: UIColor = UIColor.white {
         didSet {
             self.setTitleColor(pressTextColor, for: .highlighted)
         }
     }
-    @IBInspectable var pressBgColor: UIColor!
+    @IBInspectable open var pressBgColor: UIColor!
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
