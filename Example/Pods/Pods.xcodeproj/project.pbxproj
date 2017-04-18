@@ -11,7 +11,6 @@
 		63A6704AA2E2ED8F41EC3641C5876CEF /* Pods-EDToolKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB06C9F9B19062E3E0B3855E572168B /* Pods-EDToolKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79D1C77097BBF8AAEE965B312590C646 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		93003F706C574E2E3F5DB5D453C9134B /* Pods-EDToolKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E265958D2BC6AA429C89079AC078CB /* Pods-EDToolKit_Tests-dummy.m */; };
-		933CB2E31EA452A400B10A88 /* UIDecorationKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933CB2E21EA452A400B10A88 /* UIDecorationKit.swift */; };
 		937A0BA81EA0633F002D6458 /* MakeUITextViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937A0BA71EA0633F002D6458 /* MakeUITextViewKit.swift */; };
 		937A0BAA1EA06489002D6458 /* MakeUIViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937A0BA91EA06489002D6458 /* MakeUIViewKit.swift */; };
 		9385B8791E9F413600D23126 /* MakeUIButtonKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9385B8781E9F413600D23126 /* MakeUIButtonKit.swift */; };
@@ -52,7 +51,6 @@
 		80FCE3D8E510889ABA936BED5E4E7657 /* Pods-EDToolKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EDToolKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8376EBD33ACDBF8D933BCA3F05050827 /* Pods-EDToolKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EDToolKit_Tests.modulemap"; sourceTree = "<group>"; };
 		860768C1C4833F75F9C88F1CBD2DF8B6 /* Pods_EDToolKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EDToolKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		933CB2E21EA452A400B10A88 /* UIDecorationKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDecorationKit.swift; sourceTree = "<group>"; };
 		937A0BA71EA0633F002D6458 /* MakeUITextViewKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeUITextViewKit.swift; sourceTree = "<group>"; };
 		937A0BA91EA06489002D6458 /* MakeUIViewKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeUIViewKit.swift; sourceTree = "<group>"; };
 		9385B8781E9F413600D23126 /* MakeUIButtonKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeUIButtonKit.swift; sourceTree = "<group>"; };
@@ -176,7 +174,6 @@
 			children = (
 				93FAEB941E9B1A0000CDDC5E /* SharedManagerKit.swift */,
 				93FAEB921E9B179F00CDDC5E /* CommonModuleKit.swift */,
-				933CB2E21EA452A400B10A88 /* UIDecorationKit.swift */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -360,7 +357,6 @@
 				4F7477BC1F0E1622D653F7ECD4597956 /* ReplaceMe.swift in Sources */,
 				93B635CA1EA0613D00A42A09 /* MakeUITextFieldKit.swift in Sources */,
 				93FAEB991E9B1B6400CDDC5E /* FadeInOutEffectSegue.swift in Sources */,
-				933CB2E31EA452A400B10A88 /* UIDecorationKit.swift in Sources */,
 				DEFC05281DD5AEAB0085B173 /* ExtensionKit.swift in Sources */,
 				DEFC05241DD5A1180085B173 /* AutoLayoutKit.swift in Sources */,
 			);
