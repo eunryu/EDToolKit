@@ -90,6 +90,14 @@ public class MakeUITextViewKit {
     open func setSpacingText(textView: UITextView, text: String, spacingSize: CGFloat) {
         let style = NSMutableParagraphStyle()
         style.lineSpacing = spacingSize
+        style.minimumLineHeight = 20
+        textView.attributedText = NSAttributedString(string: text, attributes: [NSParagraphStyleAttributeName:style])
+    }
+    
+    open func setSpacingText(textView: UITextView, text: String, spacingSize: CGFloat, minSize: CGFloat) {
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = spacingSize
+        style.minimumLineHeight = minSize
         textView.attributedText = NSAttributedString(string: text, attributes: [NSParagraphStyleAttributeName:style])
     }
 }
