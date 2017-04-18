@@ -19,6 +19,9 @@ public class MakeUITextViewKit {
         let mainTextView: UITextView = UITextView(frame: size)
         
         mainTextView.text = text
+        mainTextView.isEditable = false
+        mainTextView.isScrollEnabled = false
+        mainTextView.textContainerInset = UIEdgeInsets.zero
         mainTextView.translatesAutoresizingMaskIntoConstraints = false
         mainTextView.textColor = UIColor.black
         mainTextView.isEditable = false
