@@ -21,6 +21,7 @@ public class MakeUITextViewKit {
         mainTextView.text = text
         mainTextView.translatesAutoresizingMaskIntoConstraints = false
         mainTextView.textColor = UIColor.black
+        mainTextView.isEditable = false
         mainTextView.font = UIFont(name: "Helvetica", size: 14)
         addView.addSubview(mainTextView)
         
@@ -34,6 +35,9 @@ public class MakeUITextViewKit {
         style.lineSpacing = spacingSize
         mainTextView.attributedText = NSAttributedString(string: spacingText, attributes: [NSParagraphStyleAttributeName:style])
         
+        mainTextView.isEditable = false
+        mainTextView.isScrollEnabled = false
+        mainTextView.textContainerInset = UIEdgeInsets.zero
         mainTextView.translatesAutoresizingMaskIntoConstraints = false
         mainTextView.textColor = UIColor.black
         mainTextView.font = UIFont(name: "Helvetica", size: 14)
