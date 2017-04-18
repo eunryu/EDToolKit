@@ -92,6 +92,12 @@ public class MakeUILabelKit {
         }
     }
     
+    open func setSpacingText(label: UILabel, text: String, spacingSize: CGFloat) {
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = spacingSize
+        label.attributedText = NSAttributedString(string: text, attributes: [NSParagraphStyleAttributeName:style])
+    }
+    
     open func addTouchAction(_ label: UILabel, isVoid: @escaping CompletionHandler, isAction: Selector) {
         let isGesture = UITapGestureRecognizer(target: label, action: isAction)
         label.addGestureRecognizer(isGesture)

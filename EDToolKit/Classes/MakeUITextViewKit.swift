@@ -82,4 +82,10 @@ public class MakeUITextViewKit {
             textView.layer.cornerRadius = corner!
         }
     }
+    
+    open func setSpacingText(textView: UITextView, text: String, spacingSize: CGFloat) {
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = spacingSize
+        textView.attributedText = NSAttributedString(string: text, attributes: [NSParagraphStyleAttributeName:style])
+    }
 }
