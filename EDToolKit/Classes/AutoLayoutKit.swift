@@ -163,4 +163,33 @@ open class AutoLayoutKit {
         let ratio = NSLayoutConstraint(item: TargetView, attribute: .width, relatedBy: .equal, toItem: TargetView, attribute: .height, multiplier: ratioWidth / ratioHeight, constant: 1.0)
         return ratio
     }
+    
+    // MARK : 2017.04.23 가운데 정렬 관련 추가.
+    open func CenterX(_ TargetView : AnyObject, terms: CGFloat, MainView : AnyObject) {
+        MainView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: terms))
+    }
+    
+    open func CenterY(_ TargetView : AnyObject, terms: CGFloat, MainView : AnyObject) {
+        MainView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.centerY, multiplier: 1.0, constant: terms))
+    }
+    
+    open func setCenterLayout(_ X: Bool, Y: Bool, Xterms: CGFloat?, Yterms: CGFloat?, TargetView: AnyObject, MainView: AnyObject) {
+        // X
+        if X {
+            if Xterms != nil {
+                self.CenterX(TargetView, terms: Xterms!, MainView: MainView)
+            } else {
+                self.CenterX(TargetView, MainView: MainView)
+            }
+        }
+        
+        // Y
+        if Y {
+            if Yterms != nil {
+                self.CenterY(TargetView, terms: Yterms!, MainView: MainView)
+            } else {
+                self.CenterY(TargetView, MainView: MainView)
+            }
+        }
+    }
 }
