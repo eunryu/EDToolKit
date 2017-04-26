@@ -16,7 +16,7 @@ public class MakeUIViewKit {
         
     }
     
-//    @available(*, deprecated, message: "곧 없어질 예정, background 있는 것으로 대체.")
+    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
     open func makeView(size: CGRect, addView: AnyObject) -> UIView {
         let mainView: UIView = UIView(frame: size)
         mainView.translatesAutoresizingMaskIntoConstraints = false
@@ -25,7 +25,7 @@ public class MakeUIViewKit {
         return mainView
     }
     
-//    @available(*, deprecated, message: "곧 없어질 예정, background 있는 것으로 대체.")
+    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
     open func makeView(size: CGRect) -> UIView {
         let mainView: UIView = UIView(frame: size)
         mainView.translatesAutoresizingMaskIntoConstraints = false

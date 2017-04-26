@@ -15,7 +15,7 @@ public class MakeUITextViewKit {
         
     }
     
-    @available(*, deprecated, message: "Deprecated in the next version.")
+    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
     open func makeTextView(text: String, size: CGRect, addView: AnyObject) -> UITextView {
         let mainTextView: UITextView = UITextView(frame: size)
         
@@ -32,7 +32,7 @@ public class MakeUITextViewKit {
         return mainTextView
     }
     
-    @available(*, deprecated, message: "Deprecated in the next version.")
+    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
     open func makeTextView(spacingText: String, spacingSize: CGFloat, size: CGRect, addView: AnyObject) -> UITextView {
         let mainTextView: UITextView = UITextView(frame: size)
         
