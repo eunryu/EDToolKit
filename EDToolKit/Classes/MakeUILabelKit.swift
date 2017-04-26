@@ -102,6 +102,18 @@ public class MakeUILabelKit {
         }
     }
     
+    // MARK : 2017.04.26 lineDecoration 추가
+    open func textLineDecoration(label: UILabel, maxLine: Int, breakMode: NSLineBreakMode?) {
+        label.numberOfLines = maxLine
+        
+        if breakMode != nil {
+            label.lineBreakMode = breakMode!
+        } else {
+            label.lineBreakMode = .byWordWrapping
+        }
+    }
+    // -------------------------
+    
     open func contentDecoration(label: UILabel, layerColor: UIColor?, bgColor: UIColor?, layerWidth: CGFloat?, corner: CGFloat?) {
         if layerColor != nil && layerWidth != nil {
             label.layer.borderColor = layerColor!.cgColor
