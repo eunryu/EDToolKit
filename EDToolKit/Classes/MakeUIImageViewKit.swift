@@ -18,6 +18,7 @@ public class MakeUIImageViewKit {
         
     }
     
+    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
     open func makeImageView(image: UIImage, contentSize: CGRect, addView: AnyObject) -> UIImageView {
         let mainImageView: UIImageView = UIImageView(frame: contentSize)
         mainImageView.image = image
