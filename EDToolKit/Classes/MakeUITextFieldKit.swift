@@ -16,6 +16,7 @@ public class MakeUITextFieldKit {
         
     }
     
+    @available(*, deprecated, message: "Deprecated in the next version.")
     open func makeTextField(placeholder: String, size: CGRect, addView: AnyObject) -> UITextField {
         let mainTextField: UITextField = UITextField(frame: size)
         
