@@ -11,7 +11,10 @@ import UIKit
 
 public class MakeUITextFieldKit {
     
+    @available(*, deprecated, message: "다음버전에 deprecated, shared 사용")
     open static let shard = MakeUITextFieldKit()
+    
+    open static let shared = MakeUITextFieldKit()
     public init() {
         
     }

@@ -16,7 +16,11 @@ public class MakeUILabelKit {
     fileprivate var isAction: Void = Void()
     
     private var isActionTest: CompletionHandler!
+    
+    @available(*, deprecated, message: "다음 버전 Deprecated, shared 사용할것.")
     open static let shard = MakeUILabelKit()
+    
+    open static let shared = MakeUILabelKit()
     
     public init() {
     
