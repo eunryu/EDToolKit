@@ -23,6 +23,7 @@ public class MakeUILabelKit {
     }
     
     // MARK: make UILabel
+    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
     open func makeLabel(_ text: String, size: CGRect, addView: AnyObject) -> UILabel {
         let mainLabel = UILabel(frame: size)
         
@@ -35,6 +36,7 @@ public class MakeUILabelKit {
         return mainLabel
     }
     
+    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
     open func makeLabel(_ spacingText: String, spacingSize: CGFloat, size: CGRect, addView: AnyObject) -> UILabel {
         let mainLabel = UILabel(frame: size)
         
