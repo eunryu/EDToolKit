@@ -13,8 +13,7 @@ class SharedManagerKit {
     
     let sharedPreference = UserDefaults.standard
     
-    @available(*, deprecated, message: "shared 사용.")
-    static let instance = SharedManagerKit()
+    open static let shared = SharedManagerKit()
     init() {
         
     }
