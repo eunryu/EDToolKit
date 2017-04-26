@@ -16,11 +16,47 @@ public class MakeUIViewKit {
         
     }
     
+    @available(*, deprecated, message: "곧 없어질 예정, background 있는 것으로 대체.")
     open func makeView(size: CGRect, addView: AnyObject) -> UIView {
         let mainView: UIView = UIView(frame: size)
         mainView.translatesAutoresizingMaskIntoConstraints = false
         mainView.backgroundColor = UIColor.clear
         addView.addSubview(mainView)
+        return mainView
+    }
+    
+    @available(*, deprecated, message: "곧 없어질 예정, background 있는 것으로 대체.")
+    open func makeView(size: CGRect) -> UIView {
+        let mainView: UIView = UIView(frame: size)
+        mainView.translatesAutoresizingMaskIntoConstraints = false
+        mainView.backgroundColor = UIColor.clear
+        return mainView
+    }
+    
+    open func makeView(size: CGRect, background: UIColor?, addView: AnyObject) -> UIView {
+        let mainView: UIView = UIView(frame: size)
+        mainView.translatesAutoresizingMaskIntoConstraints = false
+        
+        if background != nil {
+            mainView.backgroundColor = background!
+        } else {
+            mainView.backgroundColor = UIColor.clear
+        }
+        
+        addView.addSubview(mainView)
+        return mainView
+    }
+    
+    open func makeView(size: CGRect, background: UIColor?) -> UIView {
+        let mainView: UIView = UIView(frame: size)
+        mainView.translatesAutoresizingMaskIntoConstraints = false
+        
+        if background != nil {
+            mainView.backgroundColor = background!
+        } else {
+            mainView.backgroundColor = UIColor.clear
+        }
+        
         return mainView
     }
     
