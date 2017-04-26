@@ -51,6 +51,37 @@ public class MakeUILabelKit {
         return mainLabel
     }
     
+    // MARK : 2017.04.26 Size(CGRect) -> Size(CGSize) 로 변경, 상단함수 곧 Deprecated 에정.
+    open func makeLabel(_ text: String, size: CGSize, addView: AnyObject) -> UILabel {
+        let mainLabel = UILabel(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        
+        labelBasicWork(mainLabel)
+        mainLabel.text = text
+        mainLabel.textColor = UIColor.black
+        mainLabel.font = UIFont(name: "Helvetica", size: 14.0)
+        
+        addView.addSubview(mainLabel)
+        return mainLabel
+    }
+    
+    open func makeLabel(_ spacingText: String, spacingSize: CGFloat, size: CGSize, addView: AnyObject) -> UILabel {
+        let mainLabel = UILabel(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        
+        labelBasicWork(mainLabel)
+        
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = spacingSize
+        mainLabel.attributedText = NSAttributedString(string: spacingText, attributes: [NSParagraphStyleAttributeName:style])
+        
+        mainLabel.textColor = UIColor.black
+        mainLabel.font = UIFont(name: "Helvetica", size: 14.0)
+        
+        addView.addSubview(mainLabel)
+        return mainLabel
+    }
+    
+    // -----------------------
+    
     open func textDecoration(_ label: UILabel, fontSize: CGFloat?, fontName: String?, color: UIColor?, alignment: NSTextAlignment?) {
         if fontSize != nil && fontName != nil {
             label.font = UIFont(name: fontName!, size: fontSize!)

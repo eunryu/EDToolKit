@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "11D1D33DE43A83FA39BA428F08657A8E"
+               BlueprintIdentifier = "2558C8F02AD5F627F66EE4D382FF3926"
                BuildableName = "Pods_EDToolKit_Tests.framework"
                BlueprintName = "Pods-EDToolKit_Tests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "11D1D33DE43A83FA39BA428F08657A8E"
+            BlueprintIdentifier = "2558C8F02AD5F627F66EE4D382FF3926"
             BuildableName = "Pods_EDToolKit_Tests.framework"
             BlueprintName = "Pods-EDToolKit_Tests"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "11D1D33DE43A83FA39BA428F08657A8E"
-            BuildableName = "Pods_EDToolKit_Tests.framework"
-            BlueprintName = "Pods-EDToolKit_Tests"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

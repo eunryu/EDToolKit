@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 public class MakeUIImageViewKit {
     
@@ -25,6 +26,29 @@ public class MakeUIImageViewKit {
         
         return mainImageView
     }
+    
+    // MARK : 2017.04.26 Size(CGRect) -> Size(CGSize) 로 변경
+    open func makeImageView(image: UIImage, size: CGSize, addView: AnyObject) -> UIImageView {
+        let mainImageView: UIImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        mainImageView.image = image
+        mainImageView.translatesAutoresizingMaskIntoConstraints = false
+        addView.addSubview(mainImageView)
+        
+        return mainImageView
+    }
+    // ------------------------
+    
+    
+    // MARK : 2017.04.26 url 이미지 불러오면서 만드는 이미지 뷰의 추가.
+    open func makeImageView(imageURL: String, size: CGSize, addView: AnyObject) -> UIImageView {
+        let mainImageView: UIImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        mainImageView.sd_setImage(with: URL(string: imageURL)!)
+        mainImageView.translatesAutoresizingMaskIntoConstraints = false
+        addView.addSubview(mainImageView)
+        
+        return mainImageView
+    }
+    // -------------------------------
     
     open func containerDecoration(imgView: UIImageView, layerColor: UIColor?, layerWidth: CGFloat?, bgColor: UIColor?, corner: CGFloat?) {
         if layerColor != nil && layerWidth != nil {

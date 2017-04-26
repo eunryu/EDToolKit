@@ -1,5 +1,9 @@
 PODS:
-  - EDToolKit (0.1.0)
+  - EDToolKit (2.6.2):
+    - SDWebImage
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
   - EDToolKit (from `../`)
@@ -9,8 +13,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  EDToolKit: be0228dbb88d6b25d0d85882efe057274b5e86c7
+  EDToolKit: 3fd1d0a0c6de61460f36ccb101607ed7e08aff8a
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 01f9154e350a47686615a24760981b44ad5578e8
+PODFILE CHECKSUM: 616e710a19e98bbe5f334609ba66d9326b5edc23
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1

@@ -28,6 +28,22 @@ public class MakeUITextFieldKit {
         return mainTextField
     }
     
+    // MARK : 2017.04.26 Size(CGRect) -> Size(CGSize) 로 변경
+    
+    open func makeTextField(placeholder: String, size: CGSize, addView: AnyObject) -> UITextField {
+        let mainTextField: UITextField = UITextField(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        
+        mainTextField.placeholder = placeholder
+        mainTextField.translatesAutoresizingMaskIntoConstraints = false
+        mainTextField.textColor = UIColor.black
+        mainTextField.font = UIFont(name: "Helvetica", size: 14)
+        addView.addSubview(mainTextField)
+        
+        return mainTextField
+    }
+    
+    // ------------------------
+    
     open func textDecoration(field: UITextField, fontSize: CGFloat?, fontName: String?, color: UIColor?, alignment: NSTextAlignment?) {
         if fontSize != nil && fontName != nil {
             field.font = UIFont(name: fontName!, size: fontSize!)

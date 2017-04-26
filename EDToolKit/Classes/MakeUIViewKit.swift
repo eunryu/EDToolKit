@@ -33,8 +33,10 @@ public class MakeUIViewKit {
         return mainView
     }
     
-    open func makeView(size: CGRect, background: UIColor?, addView: AnyObject) -> UIView {
-        let mainView: UIView = UIView(frame: size)
+    // MARK : 2017.04.26 뷰에 background Color지정 추가, 기존 함수 Deprecated 예정.
+    // Size를 CGSize로 받도록 변경
+    open func makeView(size: CGSize, background: UIColor?, addView: AnyObject) -> UIView {
+        let mainView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         mainView.translatesAutoresizingMaskIntoConstraints = false
         
         if background != nil {
@@ -47,8 +49,8 @@ public class MakeUIViewKit {
         return mainView
     }
     
-    open func makeView(size: CGRect, background: UIColor?) -> UIView {
-        let mainView: UIView = UIView(frame: size)
+    open func makeView(size: CGSize, background: UIColor?) -> UIView {
+        let mainView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         mainView.translatesAutoresizingMaskIntoConstraints = false
         
         if background != nil {
@@ -59,6 +61,8 @@ public class MakeUIViewKit {
         
         return mainView
     }
+    
+    // -----------
     
     open func contentDecoration(view: UIView, layerColor: UIColor?, bgColor: UIColor?, layerWidth: CGFloat?, corner: CGFloat?) {
         if layerColor != nil && layerWidth != nil {
