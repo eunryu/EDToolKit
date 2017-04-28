@@ -23,36 +23,6 @@ public class MakeUILabelKit {
     }
     
     // MARK: make UILabel
-    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
-    open func makeLabel(_ text: String, size: CGRect, addView: AnyObject) -> UILabel {
-        let mainLabel = UILabel(frame: size)
-        
-        labelBasicWork(mainLabel)
-        mainLabel.text = text
-        mainLabel.textColor = UIColor.black
-        mainLabel.font = UIFont(name: "Helvetica", size: 14.0)
-        
-        addView.addSubview(mainLabel)
-        return mainLabel
-    }
-    
-    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
-    open func makeLabel(_ spacingText: String, spacingSize: CGFloat, size: CGRect, addView: AnyObject) -> UILabel {
-        let mainLabel = UILabel(frame: size)
-        
-        labelBasicWork(mainLabel)
-        
-        let style = NSMutableParagraphStyle()
-        style.lineSpacing = spacingSize
-        mainLabel.attributedText = NSAttributedString(string: spacingText, attributes: [NSParagraphStyleAttributeName:style])
-        
-        mainLabel.textColor = UIColor.black
-        mainLabel.font = UIFont(name: "Helvetica", size: 14.0)
-        
-        addView.addSubview(mainLabel)
-        return mainLabel
-    }
-    
     // MARK : 2017.04.26 Size(CGRect) -> Size(CGSize) 로 변경, 상단함수 곧 Deprecated 에정.
     open func makeLabel(_ text: String, size: CGSize, addView: AnyObject) -> UILabel {
         let mainLabel = UILabel(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))

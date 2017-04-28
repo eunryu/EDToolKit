@@ -18,16 +18,6 @@ public class MakeUIImageViewKit {
         
     }
     
-    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
-    open func makeImageView(image: UIImage, contentSize: CGRect, addView: AnyObject) -> UIImageView {
-        let mainImageView: UIImageView = UIImageView(frame: contentSize)
-        mainImageView.image = image
-        mainImageView.translatesAutoresizingMaskIntoConstraints = false
-        addView.addSubview(mainImageView)
-        
-        return mainImageView
-    }
-    
     // MARK : 2017.04.26 Size(CGRect) -> Size(CGSize) 로 변경
     open func makeImageView(image: UIImage, size: CGSize, addView: AnyObject) -> UIImageView {
         let mainImageView: UIImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))

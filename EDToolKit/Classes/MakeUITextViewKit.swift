@@ -15,44 +15,7 @@ public class MakeUITextViewKit {
         
     }
     
-    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
-    open func makeTextView(text: String, size: CGRect, addView: AnyObject) -> UITextView {
-        let mainTextView: UITextView = UITextView(frame: size)
-        
-        mainTextView.text = text
-        mainTextView.isEditable = false
-        mainTextView.isScrollEnabled = false
-        mainTextView.textContainerInset = UIEdgeInsets.zero
-        mainTextView.translatesAutoresizingMaskIntoConstraints = false
-        mainTextView.textColor = UIColor.black
-        mainTextView.isEditable = false
-        mainTextView.font = UIFont(name: "Helvetica", size: 14)
-        addView.addSubview(mainTextView)
-        
-        return mainTextView
-    }
-    
-    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
-    open func makeTextView(spacingText: String, spacingSize: CGFloat, size: CGRect, addView: AnyObject) -> UITextView {
-        let mainTextView: UITextView = UITextView(frame: size)
-        
-        let style = NSMutableParagraphStyle()
-        style.lineSpacing = spacingSize
-        mainTextView.attributedText = NSAttributedString(string: spacingText, attributes: [NSParagraphStyleAttributeName:style])
-        
-        mainTextView.isEditable = false
-        mainTextView.isScrollEnabled = false
-        mainTextView.textContainerInset = UIEdgeInsets.zero
-        mainTextView.translatesAutoresizingMaskIntoConstraints = false
-        mainTextView.textColor = UIColor.black
-        mainTextView.font = UIFont(name: "Helvetica", size: 14)
-        addView.addSubview(mainTextView)
-        
-        return mainTextView
-    }
-    
     // MARK : 2017.04.26 Size(CGRect) -> Size(CGSize) 로 변경
-    
     open func makeTextView(text: String, size: CGSize, addView: AnyObject) -> UITextView {
         let mainTextView: UITextView = UITextView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         
@@ -86,7 +49,6 @@ public class MakeUITextViewKit {
         
         return mainTextView
     }
-    
     // ------------------------
     
     open func textDecoration(textView: UITextView, fontSize: CGFloat?, fontName: String?, color: UIColor?, alignment: NSTextAlignment?) {

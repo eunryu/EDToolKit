@@ -16,23 +16,6 @@ public class MakeUIViewKit {
         
     }
     
-    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
-    open func makeView(size: CGRect, addView: AnyObject) -> UIView {
-        let mainView: UIView = UIView(frame: size)
-        mainView.translatesAutoresizingMaskIntoConstraints = false
-        mainView.backgroundColor = UIColor.clear
-        addView.addSubview(mainView)
-        return mainView
-    }
-    
-    @available(*, deprecated, message: "Deprecated in the ver 3.0.0")
-    open func makeView(size: CGRect) -> UIView {
-        let mainView: UIView = UIView(frame: size)
-        mainView.translatesAutoresizingMaskIntoConstraints = false
-        mainView.backgroundColor = UIColor.clear
-        return mainView
-    }
-    
     // MARK : 2017.04.26 뷰에 background Color지정 추가, 기존 함수 Deprecated 예정.
     // Size를 CGSize로 받도록 변경
     open func makeView(size: CGSize, background: UIColor?, addView: AnyObject) -> UIView {
