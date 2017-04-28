@@ -93,4 +93,15 @@ public class MakeUIViewKit {
         
         return borderView
     }
+    
+    // MARK : 04.28 세로 border 추가
+    open func makeBorderView(borderHeight: CGFloat, borderColor: UIColor, addView: AnyObject) -> UIView {
+        let borderView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 1, height : borderHeight))
+        borderView.backgroundColor = borderColor
+        borderView.translatesAutoresizingMaskIntoConstraints = false
+        addView.addSubview(borderView)
+        
+        return borderView
+    }
+    // -----------------------------
 }
