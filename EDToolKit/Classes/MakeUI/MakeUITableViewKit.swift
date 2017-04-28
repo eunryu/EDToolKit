@@ -11,7 +11,7 @@ import UIKit
 
 open class MakeUITableViewKit {
     
-    open let shared = MakeUITableViewKit()
+    open static let shared = MakeUITableViewKit()
     
     open func makeTableView(size: CGSize, addView: AnyObject) -> UITableView {
         let mainTableView = UITableView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height), style: .plain)

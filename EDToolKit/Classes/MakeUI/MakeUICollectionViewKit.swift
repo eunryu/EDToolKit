@@ -11,9 +11,9 @@ import UIKit
 
 open class MakeUICollectionViewKit {
     
-    open let shared = MakeUICollectionViewKit()
+    open static let shared = MakeUICollectionViewKit()
     
-    open func makeUICollectionView(size: CGSize, flow: viewFlow, addView: AnyObject) -> UICollectionView {
+    open func makeCollectionView(size: CGSize, flow: viewFlow, addView: AnyObject) -> UICollectionView {
         let flowLayout = UICollectionViewFlowLayout()
         
         if flow == .Horizontal {

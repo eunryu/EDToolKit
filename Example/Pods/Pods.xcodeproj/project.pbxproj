@@ -43,6 +43,8 @@
 		92AA7072EC5DE27085B3D58150737B89 /* AutoLayoutKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BED09BA82AD7A12224ABB64AB83CB0 /* AutoLayoutKit.swift */; };
 		93DFA2E11EB2CCE400DFC95A /* MakeUITableViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DFA2E01EB2CCE400DFC95A /* MakeUITableViewKit.swift */; };
 		93DFA2E61EB2D63700DFC95A /* MakeUICollectionViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DFA2E51EB2D63700DFC95A /* MakeUICollectionViewKit.swift */; };
+		93DFA2E81EB2D91200DFC95A /* MakeUIScrollViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DFA2E71EB2D91200DFC95A /* MakeUIScrollViewKit.swift */; };
+		93DFA2EB1EB2DA2200DFC95A /* ToolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DFA2EA1EB2DA2200DFC95A /* ToolKit.swift */; };
 		960AF80B25FCA2192870FC4E999156E6 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 56A1618B2AF1B2871E1604395C8EFA09 /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A9A937826FBEFDBD9AE63397D264D4C /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A73F0B24D98F189DCB613155DF1EE21 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BAB3DD18D1336A4351B513C35469D8C /* NSImage+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C1E697FDBDB6720C67C945FF48A5AA /* NSImage+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -143,6 +145,8 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93DFA2E01EB2CCE400DFC95A /* MakeUITableViewKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeUITableViewKit.swift; path = MakeUI/MakeUITableViewKit.swift; sourceTree = "<group>"; };
 		93DFA2E51EB2D63700DFC95A /* MakeUICollectionViewKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeUICollectionViewKit.swift; path = MakeUI/MakeUICollectionViewKit.swift; sourceTree = "<group>"; };
+		93DFA2E71EB2D91200DFC95A /* MakeUIScrollViewKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeUIScrollViewKit.swift; path = MakeUI/MakeUIScrollViewKit.swift; sourceTree = "<group>"; };
+		93DFA2EA1EB2DA2200DFC95A /* ToolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToolKit.swift; path = Etc/ToolKit.swift; sourceTree = "<group>"; };
 		99EA3D3972868DAE2755F6184605ADD4 /* MakeUIViewKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MakeUIViewKit.swift; sourceTree = "<group>"; };
 		9CCDC131540014F745AC2AD22A909B98 /* EDToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EDToolKit-prefix.pch"; sourceTree = "<group>"; };
 		B31E3CCF9BE006C2890F44D2DF3092C3 /* Pods-EDToolKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EDToolKit_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -339,6 +343,7 @@
 		84E0357B3AABE5F8DB7E4C6F29D2A8CE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				93DFA2E91EB2DA0600DFC95A /* Etc */,
 				93DFA2D01EB03B6A00DFC95A /* DecoKit */,
 				93DFA2CF1EB03B5300DFC95A /* MakingUI */,
 				9164F8C6B41D1BDBB92926D8954FAEFC /* FadeInOutEffectSegue.swift */,
@@ -359,6 +364,7 @@
 				99EA3D3972868DAE2755F6184605ADD4 /* MakeUIViewKit.swift */,
 				93DFA2E01EB2CCE400DFC95A /* MakeUITableViewKit.swift */,
 				93DFA2E51EB2D63700DFC95A /* MakeUICollectionViewKit.swift */,
+				93DFA2E71EB2D91200DFC95A /* MakeUIScrollViewKit.swift */,
 			);
 			name = MakingUI;
 			sourceTree = "<group>";
@@ -372,6 +378,14 @@
 				9195F559B5B52379E9476ACE9EF421B5 /* CustomUIKit.swift */,
 			);
 			name = DecoKit;
+			sourceTree = "<group>";
+		};
+		93DFA2E91EB2DA0600DFC95A /* Etc */ = {
+			isa = PBXGroup;
+			children = (
+				93DFA2EA1EB2DA2200DFC95A /* ToolKit.swift */,
+			);
+			name = Etc;
 			sourceTree = "<group>";
 		};
 		A835BD1E00D2D6EE51EB6DED09948F80 /* SDWebImage */ = {
@@ -587,10 +601,12 @@
 				C3F82B1E3D8F5D1BB69B84F20EE2F075 /* CommonModuleKit.swift in Sources */,
 				728B7CA1E750FA1E92B76898EFE559A1 /* CustomUIKit.swift in Sources */,
 				93DFA2E61EB2D63700DFC95A /* MakeUICollectionViewKit.swift in Sources */,
+				93DFA2EB1EB2DA2200DFC95A /* ToolKit.swift in Sources */,
 				A48C132105CB672D0A59D382633310C8 /* EDToolKit-dummy.m in Sources */,
 				47BD2BD838AD6EEE23996602CE04823D /* ExtensionKit.swift in Sources */,
 				F081D1A7432C6BE92EDE07B179628167 /* FadeInOutEffectSegue.swift in Sources */,
 				93DFA2E11EB2CCE400DFC95A /* MakeUITableViewKit.swift in Sources */,
+				93DFA2E81EB2D91200DFC95A /* MakeUIScrollViewKit.swift in Sources */,
 				0AEDB1966F4184F09D6620BFBB7BEB38 /* MakeUIButtonKit.swift in Sources */,
 				A2C3AD5A75EF3020092DD1626654F446 /* MakeUIImageViewKit.swift in Sources */,
 				E9A399D16D54DBEEDA03E1AEB523F2A8 /* MakeUILabelKit.swift in Sources */,
