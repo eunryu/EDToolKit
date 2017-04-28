@@ -42,6 +42,7 @@
 		8BAD5DDE34A005BE81DB41A35E55971E /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 581CDE3BE000EFB36C6F8318D985FA34 /* SDWebImageDownloader.m */; };
 		92AA7072EC5DE27085B3D58150737B89 /* AutoLayoutKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BED09BA82AD7A12224ABB64AB83CB0 /* AutoLayoutKit.swift */; };
 		93DFA2E11EB2CCE400DFC95A /* MakeUITableViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DFA2E01EB2CCE400DFC95A /* MakeUITableViewKit.swift */; };
+		93DFA2E61EB2D63700DFC95A /* MakeUICollectionViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DFA2E51EB2D63700DFC95A /* MakeUICollectionViewKit.swift */; };
 		960AF80B25FCA2192870FC4E999156E6 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 56A1618B2AF1B2871E1604395C8EFA09 /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A9A937826FBEFDBD9AE63397D264D4C /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A73F0B24D98F189DCB613155DF1EE21 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BAB3DD18D1336A4351B513C35469D8C /* NSImage+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 85C1E697FDBDB6720C67C945FF48A5AA /* NSImage+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -141,6 +142,7 @@
 		9390C146A22D57B0273C0F6E125FBC7C /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/SDImageCacheConfig.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93DFA2E01EB2CCE400DFC95A /* MakeUITableViewKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeUITableViewKit.swift; path = MakeUI/MakeUITableViewKit.swift; sourceTree = "<group>"; };
+		93DFA2E51EB2D63700DFC95A /* MakeUICollectionViewKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeUICollectionViewKit.swift; path = MakeUI/MakeUICollectionViewKit.swift; sourceTree = "<group>"; };
 		99EA3D3972868DAE2755F6184605ADD4 /* MakeUIViewKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MakeUIViewKit.swift; sourceTree = "<group>"; };
 		9CCDC131540014F745AC2AD22A909B98 /* EDToolKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EDToolKit-prefix.pch"; sourceTree = "<group>"; };
 		B31E3CCF9BE006C2890F44D2DF3092C3 /* Pods-EDToolKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EDToolKit_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 				2C6A593BEA6A5AB6CDAA437DD4BE9E35 /* MakeUITextViewKit.swift */,
 				99EA3D3972868DAE2755F6184605ADD4 /* MakeUIViewKit.swift */,
 				93DFA2E01EB2CCE400DFC95A /* MakeUITableViewKit.swift */,
+				93DFA2E51EB2D63700DFC95A /* MakeUICollectionViewKit.swift */,
 			);
 			name = MakingUI;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				92AA7072EC5DE27085B3D58150737B89 /* AutoLayoutKit.swift in Sources */,
 				C3F82B1E3D8F5D1BB69B84F20EE2F075 /* CommonModuleKit.swift in Sources */,
 				728B7CA1E750FA1E92B76898EFE559A1 /* CustomUIKit.swift in Sources */,
+				93DFA2E61EB2D63700DFC95A /* MakeUICollectionViewKit.swift in Sources */,
 				A48C132105CB672D0A59D382633310C8 /* EDToolKit-dummy.m in Sources */,
 				47BD2BD838AD6EEE23996602CE04823D /* ExtensionKit.swift in Sources */,
 				F081D1A7432C6BE92EDE07B179628167 /* FadeInOutEffectSegue.swift in Sources */,

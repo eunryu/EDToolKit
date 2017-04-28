@@ -30,4 +30,21 @@ public extension UITableView {
             self.register(cellData[i].self, forCellReuseIdentifier: String(describing: cellData[i].self))
         }
     }
+    
+    public func contentDecoration(layerColor: UIColor?, bgColor: UIColor?, layerWidth: CGFloat?) {
+        if layerColor != nil && layerWidth != nil {
+            self.layer.borderColor = layerColor!.cgColor
+            self.layer.borderWidth = layerWidth!
+        } else {
+            if layerColor != nil {
+                self.layer.borderColor = layerColor!.cgColor
+            } else if layerWidth != nil {
+                self.layer.borderWidth = layerWidth!
+            }
+        }
+        
+        if bgColor != nil {
+            self.backgroundColor = bgColor!
+        }
+    }
 }
