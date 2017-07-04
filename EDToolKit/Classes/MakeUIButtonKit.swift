@@ -193,6 +193,7 @@ public class MakeUIButtonKit {
 }
 
 extension UIButton {
+    // 2017.06.14 - 버튼 함수의 익스텐션화, 텍스트 꾸미기
     func textDecoration(fontName: String?, fontSize: CGFloat?, color: UIColor?, pressColor: UIColor?) {
         if fontSize != nil && fontName != nil {
             self.titleLabel!.font = UIFont(name: fontName!, size: fontSize!)
@@ -210,6 +211,27 @@ extension UIButton {
         
         if pressColor != nil {
             self.setTitleColor(pressColor!, for: .highlighted)
+        }
+    }
+    
+    func containerDecoration(layerColor: UIColor?, layerWidth: CGFloat?, bgColor: UIColor?, corner: CGFloat?) {
+        if layerColor != nil && layerWidth != nil {
+            self.layer.borderColor = layerColor!.cgColor
+            self.layer.borderWidth = layerWidth!
+        } else {
+            if layerColor != nil {
+                self.layer.borderColor = layerColor!.cgColor
+            } else if layerWidth != nil {
+                self.layer.borderWidth = layerWidth!
+            }
+        }
+        
+        if bgColor != nil {
+            self.backgroundColor = bgColor!
+        }
+        
+        if corner != nil {
+            self.layer.cornerRadius = corner!
         }
     }
 }
