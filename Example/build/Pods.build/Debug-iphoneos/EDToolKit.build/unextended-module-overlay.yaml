@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': '/Users/gimhyeonji/EDToolKit/Example/build/Debug-iphoneos/EDToolKit/EDToolKit.framework/Modules'
+    'name': '/Users/eunryu/Desktop/Develope/BitBucket/EDToolKit/Example/build/Debug-iphoneos/EDToolKit/EDToolKit.framework/Modules'
     'contents': [{
       'type': 'file',
       'name': 'module.modulemap',
-      'external-contents': '/Users/gimhyeonji/EDToolKit/Example/build/Pods.build/Debug-iphoneos/EDToolKit.build/unextended-module.modulemap',
+      'external-contents': '/Users/eunryu/Desktop/Develope/BitBucket/EDToolKit/Example/build/Pods.build/Debug-iphoneos/EDToolKit.build/unextended-module.modulemap',
     }]
   }]
 }

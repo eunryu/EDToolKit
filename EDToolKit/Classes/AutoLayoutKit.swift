@@ -120,37 +120,37 @@ open class AutoLayoutKit {
     }
     
     open func return_EqualHeight(_ TargetView : AnyObject, Height : CGFloat) -> NSLayoutConstraint {
-        let EqualHeight                     = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1.0, constant: Height)
+        let EqualHeight = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1.0, constant: Height)
         return EqualHeight
     }
     
     open func return_CenterX(_ TargetView : AnyObject, MainView : AnyObject) -> NSLayoutConstraint {
-        let centerX                         = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0)
+        let centerX = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0)
         return centerX
     }
     
     open func return_CenterY(_ TargetView : AnyObject, MainView : AnyObject) -> NSLayoutConstraint {
-        let centerY                         = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.centerY, multiplier: 1.0, constant: 0)
+        let centerY = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.centerY, multiplier: 1.0, constant: 0)
         return centerY
     }
     
     open func return_Leading(_ TargetView : AnyObject, MainView : AnyObject, LeadingSize : CGFloat) -> NSLayoutConstraint {
-        let Leading                         = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.leading, multiplier: 1.0, constant: LeadingSize)
+        let Leading = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.leading, multiplier: 1.0, constant: LeadingSize)
         return Leading
     }
     
     open func return_Trailing(_ TargetView : AnyObject, MainView : AnyObject, TrailingSize : CGFloat) -> NSLayoutConstraint {
-        let Trailing                        = NSLayoutConstraint(item: MainView, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.equal, toItem: TargetView, attribute: NSLayoutAttribute.trailing, multiplier: 1.0, constant: TrailingSize)
+        let Trailing = NSLayoutConstraint(item: MainView, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.equal, toItem: TargetView, attribute: NSLayoutAttribute.trailing, multiplier: 1.0, constant: TrailingSize)
         return Trailing
     }
     
     open func return_Top(_ TargetView : AnyObject, MainView :AnyObject, TopSize : CGFloat) -> NSLayoutConstraint {
-        let top                             = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: TopSize)
+        let top = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: TopSize)
         return top
     }
     
     open func return_Bottom(_ TargetView : AnyObject, MainView : AnyObject, BottomSize : CGFloat) -> NSLayoutConstraint {
-        let bottom                          = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: BottomSize)
+        let bottom = NSLayoutConstraint(item: TargetView, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: MainView, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: BottomSize)
         return bottom
     }
     

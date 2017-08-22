@@ -30,6 +30,7 @@ public class MakeUITextFieldKit {
     }
     // ------------------------
     
+    @available(*, deprecated: 4.1.0, message: "extension으로 대체 예정")
     open func textDecoration(field: UITextField, fontSize: CGFloat?, fontName: String?, color: UIColor?, alignment: NSTextAlignment?) {
         if fontSize != nil && fontName != nil {
             field.font = UIFont(name: fontName!, size: fontSize!)
@@ -50,6 +51,7 @@ public class MakeUITextFieldKit {
         }
     }
     
+    @available(*, deprecated: 4.1.0, message: "extension으로 대체 예정")
     open func contentDecoration(field: UITextField, layerColor: UIColor?, bgColor: UIColor?, layerWidth: CGFloat?, corner: CGFloat?) {
         if layerColor != nil && layerWidth != nil {
             field.layer.borderColor = layerColor!.cgColor
@@ -68,6 +70,49 @@ public class MakeUITextFieldKit {
         
         if corner != nil {
             field.layer.cornerRadius = corner!
+        }
+    }
+}
+
+extension UITextField {
+    func textDecoration(fontSize: CGFloat?, fontName: String?, color: UIColor?, alignment: NSTextAlignment?) {
+        if fontSize != nil && fontName != nil {
+            self.font = UIFont(name: fontName!, size: fontSize!)
+        } else {
+            if fontSize != nil {
+                self.font = UIFont(name: "Helvetica", size: fontSize!)
+            } else if fontName != nil {
+                self.font = UIFont(name: fontName!, size: 14.0)
+            }
+        }
+        
+        if color != nil {
+            self.textColor = color!
+        }
+        
+        if alignment != nil {
+            self.textAlignment = alignment!
+        }
+    }
+    
+    open func contentDecoration(layerColor: UIColor?, bgColor: UIColor?, layerWidth: CGFloat?, corner: CGFloat?) {
+        if layerColor != nil && layerWidth != nil {
+            self.layer.borderColor = layerColor!.cgColor
+            self.layer.borderWidth = layerWidth!
+        } else {
+            if layerColor != nil {
+                self.layer.borderColor = layerColor!.cgColor
+            } else if layerWidth != nil {
+                self.layer.borderWidth = layerWidth!
+            }
+        }
+        
+        if bgColor != nil {
+            self.backgroundColor = bgColor!
+        }
+        
+        if corner != nil {
+            self.layer.cornerRadius = corner!
         }
     }
 }

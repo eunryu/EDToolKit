@@ -7,4 +7,5 @@ framework module EDToolKit {
 
 module EDToolKit.Swift {
     header "EDToolKit-Swift.h"
+    requires objc
 }

@@ -70,6 +70,7 @@ public class MakeUIButtonKit {
         }
     }
     
+    @available(*, deprecated: 4.1.0, message: "extension으로 대체 예정")
     open func containerDecoration(button: UIButton, layerColor: UIColor?, layerWidth: CGFloat?, bgColor: UIColor?, corner: CGFloat?) {
         if layerColor != nil && layerWidth != nil {
             button.layer.borderColor = layerColor!.cgColor
