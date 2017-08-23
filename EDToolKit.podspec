@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EDToolKit'
-  s.version          = '3.0.0'
+  s.version          = '4.0.1'
   s.summary          = 'EDToolKit is My Tool, And AutoLayoutKit is In.'
 
 # This description is used to generate tags and improve search results.
