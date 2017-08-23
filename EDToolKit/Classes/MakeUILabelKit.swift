@@ -24,7 +24,6 @@ public class MakeUILabelKit {
     
     // MARK: make UILabel
     // MARK : 2017.04.26 Size(CGRect) -> Size(CGSize) 로 변경, 상단함수 곧 Deprecated 에정.
-    @available(*, deprecated: 4.0, message: "없어질 예정. 대신 size(CGRect) -> size(CGSize) 로 대체")
     open func makeLabel(_ text: String, size: CGSize, addView: AnyObject) -> UILabel {
         let mainLabel = UILabel(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         

@@ -95,7 +95,7 @@ extension UITextField {
         }
     }
     
-    open func contentDecoration(layerColor: UIColor?, bgColor: UIColor?, layerWidth: CGFloat?, corner: CGFloat?) {
+    func contentDecoration(layerColor: UIColor?, bgColor: UIColor?, layerWidth: CGFloat?, corner: CGFloat?) {
         if layerColor != nil && layerWidth != nil {
             self.layer.borderColor = layerColor!.cgColor
             self.layer.borderWidth = layerWidth!
