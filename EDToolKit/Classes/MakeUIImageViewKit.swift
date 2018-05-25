@@ -41,7 +41,6 @@ public class MakeUIImageViewKit {
     }
     // -------------------------------
     
-    @available(*, deprecated: 4.0, message: "extension으로 대체 예정")
     open func containerDecoration(imgView: UIImageView, layerColor: UIColor?, layerWidth: CGFloat?, bgColor: UIColor?, corner: CGFloat?) {
         if layerColor != nil && layerWidth != nil {
             imgView.layer.borderColor = layerColor!.cgColor

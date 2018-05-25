@@ -49,7 +49,6 @@ public class MakeUIButtonKit {
     }
     // -----------
     
-    @available(*, deprecated: 4.0, message: "extension으로 대체 예정")
     open func textDecoration(button: UIButton, fontName: String?, fontSize: CGFloat?, color: UIColor?, pressColor: UIColor?) {
         if fontSize != nil && fontName != nil {
             button.titleLabel!.font = UIFont(name: fontName!, size: fontSize!)
@@ -70,7 +69,6 @@ public class MakeUIButtonKit {
         }
     }
     
-    @available(*, deprecated: 4.1.0, message: "extension으로 대체 예정")
     open func containerDecoration(button: UIButton, layerColor: UIColor?, layerWidth: CGFloat?, bgColor: UIColor?, corner: CGFloat?) {
         if layerColor != nil && layerWidth != nil {
             button.layer.borderColor = layerColor!.cgColor

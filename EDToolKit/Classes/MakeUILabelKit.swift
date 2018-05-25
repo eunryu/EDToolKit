@@ -77,7 +77,6 @@ public class MakeUILabelKit {
     }
     
     // MARK : 2017.04.26 lineDecoration 추가
-    @available(*, deprecated: 4.1.0, message: "extension으로 대체 예정")
     open func textLineDecoration(label: UILabel, maxLine: Int, breakMode: NSLineBreakMode?) {
         label.numberOfLines = maxLine
         
@@ -89,7 +88,6 @@ public class MakeUILabelKit {
     }
     // -------------------------
     
-    @available(*, deprecated: 4.1.0, message: "extension으로 대체 예정")
     open func contentDecoration(label: UILabel, layerColor: UIColor?, bgColor: UIColor?, layerWidth: CGFloat?, corner: CGFloat?) {
         if layerColor != nil && layerWidth != nil {
             label.layer.borderColor = layerColor!.cgColor
@@ -111,7 +109,6 @@ public class MakeUILabelKit {
         }
     }
     
-    @available(*, deprecated: 4.1.0, message: "extension으로 대체 예정")
     open func setSpacingText(label: UILabel, text: String, spacingSize: CGFloat) {
         let style = NSMutableParagraphStyle()
         style.lineSpacing = spacingSize
