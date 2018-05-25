@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EDToolKit'
-  s.version          = '4.0.2'
+  s.version          = '4.0.3'
   s.summary          = 'EDToolKit is My Tool, And AutoLayoutKit is In.'
 
 # This description is used to generate tags and improve search results.
@@ -19,8 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
-오토레이아웃을 더 편하게 쓰기 위해 만들기 시작한 pod. 현재 오토 레이아웃 정도만 있고,
-추후UI관련 추가예정.
+각종 뷰 메이킹 및 오토레이아웃 추가 완료, 세잎레이아웃 정리 및 함수 정리 남아있음.
                        DESC
 
   s.homepage         = 'https://github.com/Eunryu/EDToolKit'
