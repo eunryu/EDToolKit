@@ -36,7 +36,6 @@ public class MakeUILabelKit {
         return mainLabel
     }
     
-    @available(*, deprecated: 4.0, message: "없어질 예체. 대신 size(CGRect) -> size(CGSize) 로 대체")
     open func makeLabel(_ spacingText: String, spacingSize: CGFloat, size: CGSize, addView: AnyObject) -> UILabel {
         let mainLabel = UILabel(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         
