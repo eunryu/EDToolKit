@@ -41,6 +41,7 @@
 		85E46618B9B1E4C6A1F4C475EBBDA964 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BD35FDC410E27DE2A3CC284B53AC2AA0 /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BAD5DDE34A005BE81DB41A35E55971E /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 581CDE3BE000EFB36C6F8318D985FA34 /* SDWebImageDownloader.m */; };
 		92AA7072EC5DE27085B3D58150737B89 /* AutoLayoutKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BED09BA82AD7A12224ABB64AB83CB0 /* AutoLayoutKit.swift */; };
+		93DA2B9120B7934900CAD039 /* SafeLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DA2B9020B7934900CAD039 /* SafeLayoutManager.swift */; };
 		93DFA2E11EB2CCE400DFC95A /* MakeUITableViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DFA2E01EB2CCE400DFC95A /* MakeUITableViewKit.swift */; };
 		93DFA2E61EB2D63700DFC95A /* MakeUICollectionViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DFA2E51EB2D63700DFC95A /* MakeUICollectionViewKit.swift */; };
 		93DFA2E81EB2D91200DFC95A /* MakeUIScrollViewKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DFA2E71EB2D91200DFC95A /* MakeUIScrollViewKit.swift */; };
@@ -143,6 +144,7 @@
 		9195F559B5B52379E9476ACE9EF421B5 /* CustomUIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomUIKit.swift; sourceTree = "<group>"; };
 		9390C146A22D57B0273C0F6E125FBC7C /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/SDImageCacheConfig.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93DA2B9020B7934900CAD039 /* SafeLayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeLayoutManager.swift; sourceTree = "<group>"; };
 		93DFA2E01EB2CCE400DFC95A /* MakeUITableViewKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeUITableViewKit.swift; path = MakeUI/MakeUITableViewKit.swift; sourceTree = "<group>"; };
 		93DFA2E51EB2D63700DFC95A /* MakeUICollectionViewKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeUICollectionViewKit.swift; path = MakeUI/MakeUICollectionViewKit.swift; sourceTree = "<group>"; };
 		93DFA2E71EB2D91200DFC95A /* MakeUIScrollViewKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeUIScrollViewKit.swift; path = MakeUI/MakeUIScrollViewKit.swift; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 				10BED09BA82AD7A12224ABB64AB83CB0 /* AutoLayoutKit.swift */,
 				C56DDAE40922E3EF07C9E54784539C92 /* CommonModuleKit.swift */,
 				9195F559B5B52379E9476ACE9EF421B5 /* CustomUIKit.swift */,
+				93DA2B9020B7934900CAD039 /* SafeLayoutManager.swift */,
 			);
 			name = DecoKit;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 				32ED82D44620C35E2A0A767AC0008816 /* MakeUIViewKit.swift in Sources */,
 				F1AEB881AABE2AB188150EB4C5A9714E /* ReplaceMe.swift in Sources */,
 				79D72FE4FB27218B7E7DF280B5058994 /* SharedManagerKit.swift in Sources */,
+				93DA2B9120B7934900CAD039 /* SafeLayoutManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
