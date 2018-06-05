@@ -11,7 +11,7 @@ import UIKit
 
 open class AutoLayoutKit {
     
-    open static let shared = AutoLayoutKit()
+    public static let shared = AutoLayoutKit()
     
     //MARK: init
     public init() {

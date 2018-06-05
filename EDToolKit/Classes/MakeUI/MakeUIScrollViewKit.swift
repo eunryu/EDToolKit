@@ -11,7 +11,7 @@ import UIKit
 
 open class MakeUIScrollViewKit {
     
-    open let shared = MakeUIScrollViewKit()
+    public let shared = MakeUIScrollViewKit()
     
     open func makeScrollView(size: CGSize, addView: AnyObject) -> UIScrollView {
         let mainView = UIScrollView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height))

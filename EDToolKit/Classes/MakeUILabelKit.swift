@@ -16,7 +16,7 @@ public class MakeUILabelKit {
     fileprivate var isAction: Void = Void()
     
     private var isActionTest: CompletionHandler!
-    open static let shared = MakeUILabelKit()
+    public static let shared = MakeUILabelKit()
     
     public init() {
     

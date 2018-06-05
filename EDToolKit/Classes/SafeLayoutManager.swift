@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 open class SafeLayoutManager {
-    open static let shared = SafeLayoutManager()
+    public static let shared = SafeLayoutManager()
     
     open func basicLayout(left: CGFloat, right: CGFloat, top: CGFloat, bottom: CGFloat, targetView: AnyObject, baseView: AnyObject) {
         if #available(iOS 11.0, *) {
