@@ -12,7 +12,7 @@ import SDWebImage
 
 public class MakeUIImageViewKit {
     
-    open static let shared = MakeUIImageViewKit()
+    public static let shared = MakeUIImageViewKit()
     
     public init() {
         

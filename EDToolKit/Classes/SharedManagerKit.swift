@@ -13,7 +13,7 @@ class SharedManagerKit {
     
     let sharedPreference = UserDefaults.standard
     
-    open static let shared = SharedManagerKit()
+    public static let shared = SharedManagerKit()
     init() {
         
     }

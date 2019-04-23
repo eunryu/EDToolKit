@@ -11,7 +11,7 @@ import UIKit
 
 open class MakeUITableViewKit {
     
-    open static let shared = MakeUITableViewKit()
+    public static let shared = MakeUITableViewKit()
     
     open func makeTableView(size: CGSize, addView: AnyObject) -> UITableView {
         let mainTableView = UITableView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height), style: .plain)
@@ -25,13 +25,13 @@ open class MakeUITableViewKit {
 }
 
 public extension UITableView {
-    public func registCells(cellData: [AnyClass]) {
+    func registCells(cellData: [AnyClass]) {
         for i in 0...cellData.count - 1 {
             self.register(cellData[i].self, forCellReuseIdentifier: String(describing: cellData[i].self))
         }
     }
     
-    public func contentDecoration(layerColor: UIColor?, bgColor: UIColor?, layerWidth: CGFloat?) {
+    func contentDecoration(layerColor: UIColor?, bgColor: UIColor?, layerWidth: CGFloat?) {
         if layerColor != nil && layerWidth != nil {
             self.layer.borderColor = layerColor!.cgColor
             self.layer.borderWidth = layerWidth!

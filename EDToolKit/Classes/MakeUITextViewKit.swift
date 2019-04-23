@@ -10,7 +10,7 @@ import Foundation
 
 public class MakeUITextViewKit {
     
-    open static let shared = MakeUITextViewKit()
+    public static let shared = MakeUITextViewKit()
     public init() {
         
     }
@@ -37,7 +37,7 @@ public class MakeUITextViewKit {
         
         let style = NSMutableParagraphStyle()
         style.lineSpacing = spacingSize
-        mainTextView.attributedText = NSAttributedString(string: spacingText, attributes: [NSAttributedStringKey.paragraphStyle:style])
+        mainTextView.attributedText = NSAttributedString(string: spacingText, attributes: [NSAttributedString.Key.paragraphStyle:style])
         
         mainTextView.isEditable = false
         mainTextView.isScrollEnabled = false
@@ -96,13 +96,13 @@ public class MakeUITextViewKit {
         let style = NSMutableParagraphStyle()
         style.lineSpacing = spacingSize
         style.minimumLineHeight = 20
-        textView.attributedText = NSAttributedString(string: text, attributes: [NSAttributedStringKey.paragraphStyle:style])
+        textView.attributedText = NSAttributedString(string: text, attributes: [NSAttributedString.Key.paragraphStyle:style])
     }
     
     open func setSpacingText(textView: UITextView, text: String, spacingSize: CGFloat, minSize: CGFloat) {
         let style = NSMutableParagraphStyle()
         style.lineSpacing = spacingSize
         style.minimumLineHeight = minSize
-        textView.attributedText = NSAttributedString(string: text, attributes: [NSAttributedStringKey.paragraphStyle:style])
+        textView.attributedText = NSAttributedString(string: text, attributes: [NSAttributedString.Key.paragraphStyle:style])
     }
 }

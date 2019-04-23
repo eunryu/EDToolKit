@@ -11,7 +11,7 @@ import UIKit
 
 public class MakeUITextFieldKit {
 
-    open static let shared = MakeUITextFieldKit()
+    public static let shared = MakeUITextFieldKit()
     public init() {
         
     }

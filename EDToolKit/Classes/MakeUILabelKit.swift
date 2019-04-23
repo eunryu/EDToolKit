@@ -12,11 +12,11 @@ import UIKit
 public class MakeUILabelKit {
 
     public typealias CompletionHandler = () -> Void
-    open static let COLOR_BASIC = UIColor.black
+    public static let COLOR_BASIC = UIColor.black
     fileprivate var isAction: Void = Void()
     
     private var isActionTest: CompletionHandler!
-    open static let shared = MakeUILabelKit()
+    public static let shared = MakeUILabelKit()
     
     public init() {
     
@@ -43,7 +43,7 @@ public class MakeUILabelKit {
         
         let style = NSMutableParagraphStyle()
         style.lineSpacing = spacingSize
-        mainLabel.attributedText = NSAttributedString(string: spacingText, attributes: [NSAttributedStringKey.paragraphStyle:style])
+        mainLabel.attributedText = NSAttributedString(string: spacingText, attributes: [NSAttributedString.Key.paragraphStyle:style])
         
         mainLabel.textColor = UIColor.black
         mainLabel.font = UIFont(name: "Helvetica", size: 14.0)
@@ -110,7 +110,7 @@ public class MakeUILabelKit {
     open func setSpacingText(label: UILabel, text: String, spacingSize: CGFloat) {
         let style = NSMutableParagraphStyle()
         style.lineSpacing = spacingSize
-        label.attributedText = NSAttributedString(string: text, attributes: [NSAttributedStringKey.paragraphStyle:style])
+        label.attributedText = NSAttributedString(string: text, attributes: [NSAttributedString.Key.paragraphStyle:style])
     }
     
     open func addTouchAction(_ label: UILabel, isVoid: @escaping CompletionHandler, isAction: Selector) {

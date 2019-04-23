@@ -14,7 +14,7 @@ open class FadeInOutEffectSegue: UIStoryboardSegue {
     override open func perform() {
         let transition = CATransition()
         transition.duration = 0.3
-        transition.type = kCATransitionFade
+        transition.type = CATransitionType.fade
         
         self.source.navigationController?.view.layer.add(transition, forKey: kCATransition)
         self.source.navigationController?.pushViewController(self.destination, animated: false)

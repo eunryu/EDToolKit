@@ -11,7 +11,7 @@ import UIKit
 
 public class MakeUIButtonKit {
     
-    open static let shared = MakeUIButtonKit()
+    public static let shared = MakeUIButtonKit()
     public init() {
         
     }

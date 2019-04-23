@@ -11,7 +11,7 @@ import UIKit
 
 open class ToolKit {
     
-    open static let shared = ToolKit()
+    public static let shared = ToolKit()
     
     open func setTestBorder(view: AnyObject) {
         view.layer.borderColor = UIColor.black.cgColor
