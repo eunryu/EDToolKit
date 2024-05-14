@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'EDToolKit' in project 'Pods'
+➜ Explicit dependency on target 'SDWebImage' in project 'Pods'
+Target 'SDWebImage' in project 'Pods' (no dependencies)

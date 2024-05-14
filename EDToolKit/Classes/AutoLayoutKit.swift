@@ -192,4 +192,27 @@ open class AutoLayoutKit {
             }
         }
     }
+    
+    // 가변 width
+    // 어우... 반대로 썼어 ;;
+    // 수정해야 되는데,... 다른뷰가 이미 영향을 받고 있음 ;; 반대로 써야겠네
+    open func changeMaxWidthConst(_ TargetView : AnyObject, minWidth : CGFloat) {
+        // 해당 min 넓이보다 크게 보임
+        TargetView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.greaterThanOrEqual, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: minWidth))
+    }
+    
+    open func changeMinWidthConst(_ TargetView : AnyObject, maxWidth : CGFloat) {
+        // 해당 max 넓이보다 작게 보임
+        TargetView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.lessThanOrEqual, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: maxWidth))
+    }
+    
+    open func changeMaxHeightConst(_ TargetView : AnyObject, minHeight : CGFloat) {
+        // 해당 min 넓이보다 크게 보임
+            TargetView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.greaterThanOrEqual, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: minHeight))
+        }
+        
+        open func changeMinHeightConst(_ TargetView : AnyObject, maxHeight : CGFloat) {
+            // 해당 max 넓이보다 작게 보임
+            TargetView.addConstraint(NSLayoutConstraint(item: TargetView, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.lessThanOrEqual, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1.0, constant: maxHeight))
+        }
 }
