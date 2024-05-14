@@ -1,7 +1,0 @@
-Target dependency graph (3 targets)
-Target 'Pods-EDToolKit_Tests' in project 'Pods'
-➜ Explicit dependency on target 'EDToolKit' in project 'Pods'
-➜ Explicit dependency on target 'SDWebImage' in project 'Pods'
-Target 'EDToolKit' in project 'Pods'
-➜ Explicit dependency on target 'SDWebImage' in project 'Pods'
-Target 'SDWebImage' in project 'Pods' (no dependencies)
